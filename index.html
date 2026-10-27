@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyVault</title>
+  <meta name="description" content="Bryce de Bruyn's study vault for the Master in Digital Marketing and Social Media at La Salle Barcelona: courses, weekly notes, deadlines, research library and study tools.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem('sv:settings') || '{}');
+        var t = s.theme || 'dark';
+        if (t === 'system') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+        if (s.accent) document.documentElement.style.setProperty('--accent', s.accent);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="brand">
+        <a href="#/" class="logo" aria-label="StudyVault home">S<span class="slash">/</span><span class="dim">V</span></a>
+        <span class="brand-sub">Study<br>Vault</span>
+        <button class="icon-btn close-nav i-x" id="closeNav" aria-label="Close menu"></button>
+      </div>
+      <button class="side-search" id="sideSearch" type="button">
+        <span class="i-search"></span><span>Search</span><kbd>⌘K</kbd>
+      </button>
+      <nav class="side-nav" id="sideNav"></nav>
+      <div class="side-scroll">
+        <section class="side-group" id="sideCourses"></section>
+        <section class="side-group" id="sideRecent"></section>
+      </div>
+      <div class="side-foot">
+        <a href="#/settings" class="nav-link" data-route="settings"><span class="i-settings"></span><span>Settings</span></a>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn i-menu" id="menuBtn" aria-label="Open menu"></button>
+        <button class="top-search" id="topSearch" type="button">
+          <span class="i-search"></span>
+          <span class="ph">Search notes, deadlines, case studies…</span>
+          <kbd>⌘K</kbd>
+        </button>
+        <div class="top-actions">
+          <a href="#/tools/focus" class="timer-pill" id="timerPill" hidden></a>
+          <button class="btn btn-primary" id="quickAdd" type="button"><span class="i-plus"></span><span class="lbl">Add deadline</span></button>
+        </div>
+      </header>
+      <main id="view" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <!-- Search palette -->
+  <div class="palette" id="palette" hidden>
+    <div class="palette-box" role="dialog" aria-modal="true" aria-label="Search StudyVault">
+      <div class="palette-input">
+        <span class="i-search"></span>
+        <input id="paletteInput" type="search" placeholder="Search everything — try “ROAS”, “CRM” or “exam”" autocomplete="off" spellcheck="false">
+        <kbd>Esc</kbd>
+      </div>
+      <div class="palette-results" id="paletteResults" role="listbox"></div>
+    </div>
+  </div>
+
+  <dialog id="dlg" class="dlg"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/vendor/marked.min.js"></script>
+  <script src="js/vendor/purify.min.js"></script>
+  <script src="js/vendor/pdf.min.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/views-home.js"></script>
+  <script src="js/views-calendar.js"></script>
+  <script src="js/views-course.js"></script>
+  <script src="js/views-library.js"></script>
+  <script src="js/views-tools.js"></script>
+  <script src="js/views-misc.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
