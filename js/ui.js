@@ -119,13 +119,13 @@
     const idx = [];
     SV.courses().forEach((c) => {
       idx.push({ type: 'Course', title: c.name, sub: [c.period, c.lecturer, c.code].filter(Boolean).join(' · '), text: (c.about || '') + ' ' + (c.assessment || ''), href: '#/course/' + c.id, course: c.id });
-      c.weeks.forEach((w) => idx.push({ type: 'Week', title: c.short + ' · Week ' + w.n + (w.title ? ': ' + w.title : ''), sub: c.name, text: w.title || '', href: '#/course/' + c.id + '?week=' + w.n, course: c.id }));
+      c.weeks.forEach((w) => idx.push({ type: 'Week', title: c.short + ' · ' + SV.weekLabel(c.id, w.n) + (w.title ? ': ' + w.title : ''), sub: c.name, text: w.title || '', href: '#/course/' + c.id + '?week=' + w.n, course: c.id }));
     });
     SV.notes().forEach((n) => {
       // One entry per section so results jump to the right place.
       const body = n.body || '';
       const parts = body.split(/\n(?=##\s)/);
-      idx.push({ type: 'Note', title: n.title, sub: SV.courseName(n.course) + (n.week ? ' · Week ' + n.week : ''), text: (n.tags || []).join(' ') + ' ' + stripMd(parts[0]), href: '#/note/' + n.id, course: n.course, tags: (n.tags || []).join(' ') });
+      idx.push({ type: 'Note', title: n.title, sub: SV.courseName(n.course) + (n.week ? ' · ' + SV.weekLabel(n.course, n.week) : ''), text: (n.tags || []).join(' ') + ' ' + stripMd(parts[0]), href: '#/note/' + n.id, course: n.course, tags: (n.tags || []).join(' ') });
       parts.slice(1).forEach((p) => {
         const h = (/^##\s+(.+)/.exec(p) || [])[1] || '';
         idx.push({ type: 'Note section', title: h.replace(/[*`]/g, ''), sub: n.title, text: stripMd(p.replace(/^##.+/, '')), href: '#/note/' + n.id + '?s=' + SV.slug(h), course: n.course });
@@ -134,7 +134,7 @@
     SV.deadlines().forEach((d) => idx.push({ type: 'Deadline', title: d.type + ' · ' + d.title, sub: SV.courseName(d.course) + ' · ' + SV.fmt(d.date) + (d.time ? ' · ' + d.time : ''), text: d.notes || '', href: '#/calendar?d=' + d.date, course: d.course }));
     [['cases', 'Case study'], ['tools', 'Tool'], ['resources', 'Resource']].forEach(([k, label]) => SV.library(k).forEach((x) =>
       idx.push({ type: label, title: x.title, sub: [x.category, SV.courseName(x.course)].filter(Boolean).join(' · '), text: [x.summary, x.lesson, (x.tags || []).join(' ')].join(' '), href: '#/library/' + k + '?item=' + x.id, course: x.course })));
-    SV.files().forEach((f) => idx.push({ type: 'File', title: f.title, sub: (f.course ? SV.courseName(f.course) : 'General') + (f.week ? ' · Week ' + f.week : ''), text: f.kind || '', href: '#/file/' + f.id, course: f.course, file: f.id }));
+    SV.files().forEach((f) => idx.push({ type: 'File', title: f.title, sub: (f.course ? SV.courseName(f.course) : 'General') + (f.week ? ' · ' + SV.weekLabel(f.course, f.week) : ''), text: f.kind || '', href: '#/file/' + f.id, course: f.course, file: f.id }));
     (SV.vault.formulas || []).forEach((f) => idx.push({ type: 'Formula', title: f.name + ' — ' + f.long, sub: f.formula, text: f.formula, href: '#/tools/formulas', course: f.course }));
     (SV.vault.debates || []).forEach((d) => idx.push({ type: 'Debate', title: d.q, sub: SV.courseName(d.course), text: '', href: '#/tools/debate', course: d.course }));
     SV.index = idx;
@@ -388,7 +388,7 @@
   SV.addNotesDialog = function (courseId, week) {
     const c = SV.course(courseId);
     let parsed = null, pdfFile = null;
-    SV.dialog('Add notes · ' + c.short + ' Week ' + week,
+    SV.dialog('Add notes · ' + c.short + ' ' + SV.weekLabel(courseId, week),
       '<div class="seg" role="tablist">' +
         '<button type="button" class="seg-btn on" data-tab="pdf" role="tab" aria-selected="true">Import a PDF</button>' +
         '<button type="button" class="seg-btn" data-tab="write" role="tab" aria-selected="false">Write a note</button></div>' +
@@ -447,7 +447,7 @@
           const id = SV.uid('un');
           notes.push({ id, course: courseId, week, title, date: SV.iso(new Date()), body: body || '*Imported PDF — no selectable text was found. Download the PDF to read it.*', source: fileId, tags: [] });
           SV.LS.set('userNotes', notes);
-          SV.toast('Note saved to ' + c.short + ' Week ' + week);
+          SV.toast('Note saved to ' + c.short + ' ' + SV.weekLabel(courseId, week));
           SV.refresh();
         }
       });
@@ -488,7 +488,7 @@
   /* ---------- Attach files to a week or to Additional content ---------- */
   SV.attachDialog = function (courseId, week, scope) {
     const c = SV.course(courseId);
-    SV.dialog('Upload files · ' + c.short + (week ? ' Week ' + week : ' additional content'),
+    SV.dialog('Upload files · ' + c.short + (week ? ' ' + SV.weekLabel(courseId, week) : ' additional content'),
       '<label class="drop" id="drop2"><input type="file" name="files" multiple hidden>' + SV.icon('upload') + '<strong>Choose files</strong><span>Slides, readings, images, spreadsheets — anything you want to keep with this course.</span></label>' +
       '<ul class="pick-list" id="pickList"></ul>' +
       '<label class="field"><span>Label <em>(optional)</em></span><select name="kind"><option>Slides</option><option>Reading</option><option>Notes</option><option>Assignment brief</option><option>Other</option></select></label>' +

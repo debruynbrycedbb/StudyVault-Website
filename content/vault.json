@@ -23,12 +23,31 @@
           "n": 1,
           "title": "Introduction to technology",
           "date": "2026-10-22",
-          "notes": ["wa-w1-session-notes"],
-          "files": ["wa-w1-notes-pdf"]
+          "notes": [
+            "wa-w1-session-notes"
+          ],
+          "files": [
+            "wa-w1-notes-pdf"
+          ]
+        },
+        {
+          "n": 2,
+          "title": "UX metrics",
+          "date": "",
+          "notes": [
+            "wa-w2-pre-reading"
+          ],
+          "files": [
+            "wa-w2-prereading-docx"
+          ]
         }
       ],
       "extras": [
-        { "type": "note", "title": "Debate questions to prepare", "body": "Week 1 lists 11 debate questions. Prepare your view on each in Study tools → Debate prep." }
+        {
+          "type": "note",
+          "title": "Debate questions to prepare",
+          "body": "Week 1 lists 11 debate questions. Prepare your view on each in Study tools → Debate prep."
+        }
       ]
     },
     {
@@ -38,9 +57,33 @@
       "period": "P1",
       "status": "current",
       "color": "#E0A84B",
-      "about": "",
-      "weeks": [],
-      "extras": []
+      "about": "Building a digital marketing plan: strategy frameworks (digital strategy, SWOT, competitive analysis, PEST), then SEO and keyword research.",
+      "weeks": [
+        {
+          "n": 2,
+          "title": "Strategy frameworks",
+          "date": "",
+          "notes": [
+            "dma-w2-pre-reading"
+          ],
+          "files": [
+            "dma-w2-prereading-pdf"
+          ]
+        },
+        {
+          "n": 3,
+          "title": "SEO and keyword research",
+          "date": "",
+          "notes": [
+            "dma-w3-pre-reading"
+          ],
+          "files": [
+            "dma-w3-prereading-pdf"
+          ]
+        }
+      ],
+      "extras": [],
+      "code": "MX002"
     },
     {
       "id": "digital-marketing-tools",
@@ -56,12 +99,23 @@
           "n": 1,
           "title": "Creating value around the customer: CRM in the age of AI",
           "date": "",
-          "notes": ["dmt-w1-crm-summary", "dmt-w1-pre-reading"],
-          "files": ["dmt-w1-summary-pdf", "dmt-w1-prereading-pdf", "dmt-w1-slides-pdf"]
+          "notes": [
+            "dmt-w1-crm-summary",
+            "dmt-w1-pre-reading"
+          ],
+          "files": [
+            "dmt-w1-summary-pdf",
+            "dmt-w1-prereading-pdf",
+            "dmt-w1-slides-pdf"
+          ]
         }
       ],
       "extras": [
-        { "type": "note", "title": "CRM + AI canvas", "body": "Six boxes for the group sprint: 1) the customer, 2) problem and stage, 3) key moments, 4) automation (target · trigger · content · channel), 5) AI + person, 6) risks and law." }
+        {
+          "type": "note",
+          "title": "CRM + AI canvas",
+          "body": "Six boxes for the group sprint: 1) the customer, 2) problem and stage, 3) key moments, 4) automation (target · trigger · content · channel), 5) AI + person, 6) risks and law."
+        }
       ]
     },
     {
@@ -78,12 +132,21 @@
           "n": 1,
           "title": "AI in the marketing workflow",
           "date": "2026-10-21",
-          "notes": ["aidm-w1-session-notes"],
-          "files": ["aidm-w1-notes-pdf", "aidm-w1-slides-pdf"]
+          "notes": [
+            "aidm-w1-session-notes"
+          ],
+          "files": [
+            "aidm-w1-notes-pdf",
+            "aidm-w1-slides-pdf"
+          ]
         }
       ],
       "extras": [
-        { "type": "note", "title": "The LOOP fact sheet", "body": "750 ml steel bottle · €29 retail · audience hypothesis: Barcelona students and commuters · goal: first purchases through the website · pilot data are synthetic. No unverified insulation or sustainability claims." }
+        {
+          "type": "note",
+          "title": "The LOOP fact sheet",
+          "body": "750 ml steel bottle · €29 retail · audience hypothesis: Barcelona students and commuters · goal: first purchases through the website · pilot data are synthetic. No unverified insulation or sustainability claims."
+        }
       ]
     },
     {
@@ -104,9 +167,61 @@
       "period": "Annual",
       "status": "current",
       "color": "#C9D6F2",
-      "about": "Final Master Thesis (TFM). Group copy uploaded to eStudy, individual copy to eSecretary, then an oral defense.",
-      "weeks": [],
-      "extras": []
+      "about": "Group 4 thesis: a digital marketing plan for Jackob Buczynski, a Polish upcycling fashion brand, focused on growing its new boutique in Gràcia, Barcelona. Group copy uploaded to eStudy, individual copy to eSecretary, then an oral defense on 23 Feb 2027.",
+      "weeks": [
+        {
+          "n": 1,
+          "label": "RD1",
+          "title": "Deliverable 1: company, sector, context and opportunity",
+          "date": "",
+          "notes": [
+            "tfm-rd1-brief",
+            "tfm-rd1-group-draft",
+            "tfm-rd1-deliverable"
+          ],
+          "files": [
+            "tfm-rd1-brief-docx",
+            "tfm-rd1-group-pdf",
+            "tfm-rd1-research-pdf",
+            "tfm-rd1-graphics-pdf"
+          ]
+        },
+        {
+          "n": 2,
+          "label": "Research",
+          "title": "Market research reports",
+          "date": "",
+          "notes": [
+            "tfm-research-barcelona",
+            "tfm-research-combined"
+          ],
+          "files": [
+            "tfm-mr-bcn-pdf",
+            "tfm-mr-combined-pdf",
+            "tfm-semrush-img"
+          ]
+        },
+        {
+          "n": 3,
+          "label": "Resources",
+          "title": "Sources and tools",
+          "date": "",
+          "notes": [
+            "tfm-sources"
+          ],
+          "files": [
+            "tfm-sources-docx"
+          ]
+        }
+      ],
+      "extras": [
+        {
+          "type": "note",
+          "title": "The brand in one line",
+          "body": "Jackob Buczynski: Polish upcycling label (est. 2017, Warsaw atelier) with a boutique at Carrer de Sant Joaquim 3, Gràcia, opened in 2026. Core message: *“We don’t throw away. We transform.”*"
+        }
+      ],
+      "code": "MX001"
     },
     {
       "id": "digital-creativity-social",
@@ -164,7 +279,6 @@
       "extras": []
     }
   ],
-
   "notes": [
     {
       "id": "aidm-w1-session-notes",
@@ -174,7 +288,15 @@
       "date": "2026-10-21",
       "path": "content/notes/aidm-w1-session-notes.md",
       "source": "aidm-w1-notes-pdf",
-      "tags": ["LOOP", "prompting", "LLMs", "ChatGPT Work", "CPA", "ROAS", "EmpCo"]
+      "tags": [
+        "LOOP",
+        "prompting",
+        "LLMs",
+        "ChatGPT Work",
+        "CPA",
+        "ROAS",
+        "EmpCo"
+      ]
     },
     {
       "id": "wa-w1-session-notes",
@@ -184,7 +306,14 @@
       "date": "2026-10-22",
       "path": "content/notes/wa-w1-session-notes.md",
       "source": "wa-w1-notes-pdf",
-      "tags": ["prescriptive analytics", "GEO", "Search Console", "dark patterns", "bias", "GDPR"]
+      "tags": [
+        "prescriptive analytics",
+        "GEO",
+        "Search Console",
+        "dark patterns",
+        "bias",
+        "GDPR"
+      ]
     },
     {
       "id": "dmt-w1-crm-summary",
@@ -194,7 +323,14 @@
       "date": "",
       "path": "content/notes/dmt-w1-crm-summary.md",
       "source": "dmt-w1-summary-pdf",
-      "tags": ["CRM", "customer lifecycle", "CX", "agentic CRM", "GDPR", "EU AI Act"]
+      "tags": [
+        "CRM",
+        "customer lifecycle",
+        "CX",
+        "agentic CRM",
+        "GDPR",
+        "EU AI Act"
+      ]
     },
     {
       "id": "dmt-w1-pre-reading",
@@ -204,100 +340,1020 @@
       "date": "",
       "path": "content/notes/dmt-w1-pre-reading.md",
       "source": "dmt-w1-prereading-pdf",
-      "tags": ["CDP", "DMP", "CRM", "first-party data", "real-time decisioning"]
+      "tags": [
+        "CDP",
+        "DMP",
+        "CRM",
+        "first-party data",
+        "real-time decisioning"
+      ]
+    },
+    {
+      "id": "dma-w2-pre-reading",
+      "course": "digital-marketing-advertising",
+      "week": 2,
+      "title": "Pre-reading: digital strategy, SWOT, competitive analysis, PEST",
+      "date": "",
+      "path": "content/notes/dma-w2-pre-reading.md",
+      "source": "dma-w2-prereading-pdf",
+      "tags": [
+        "7Ds",
+        "RACE",
+        "BCG",
+        "SWOT",
+        "competitive analysis",
+        "PEST"
+      ]
+    },
+    {
+      "id": "dma-w3-pre-reading",
+      "course": "digital-marketing-advertising",
+      "week": 3,
+      "title": "Pre-reading: SEO, long-tail keywords and keyword tools",
+      "date": "",
+      "path": "content/notes/dma-w3-pre-reading.md",
+      "source": "dma-w3-prereading-pdf",
+      "tags": [
+        "SEO",
+        "AI search",
+        "search intent",
+        "long-tail keywords",
+        "Semrush",
+        "keyword research"
+      ]
+    },
+    {
+      "id": "wa-w2-pre-reading",
+      "course": "web-analytics",
+      "week": 2,
+      "title": "Pre-reading: UX metrics",
+      "date": "",
+      "path": "content/notes/wa-w2-pre-reading.md",
+      "source": "wa-w2-prereading-docx",
+      "tags": [
+        "UX metrics",
+        "task success rate",
+        "SUS",
+        "CES",
+        "NPS",
+        "CUPID"
+      ]
+    },
+    {
+      "id": "tfm-rd1-brief",
+      "course": "masters-thesis",
+      "week": 1,
+      "title": "Deliverable 1: what it must cover",
+      "date": "",
+      "path": "content/notes/tfm-rd1-brief.md",
+      "source": "tfm-rd1-brief-docx",
+      "tags": [
+        "deliverable 1",
+        "buyer personas",
+        "ABC",
+        "PEST",
+        "opportunity"
+      ]
+    },
+    {
+      "id": "tfm-rd1-group-draft",
+      "course": "masters-thesis",
+      "week": 1,
+      "title": "Group 4 draft: From Warsaw to Barcelona",
+      "date": "",
+      "path": "content/notes/tfm-rd1-group-draft.md",
+      "source": "tfm-rd1-group-pdf",
+      "tags": [
+        "Jackob Buczynski",
+        "upcycling",
+        "Gràcia",
+        "personas",
+        "SWOT",
+        "competitors"
+      ]
+    },
+    {
+      "id": "tfm-rd1-deliverable",
+      "course": "masters-thesis",
+      "week": 1,
+      "title": "Deliverable 1 research: company, sector, context, opportunity",
+      "date": "",
+      "path": "content/notes/tfm-rd1-deliverable.md",
+      "source": "tfm-rd1-research-pdf",
+      "tags": [
+        "Jackob Buczynski",
+        "Wtórpol",
+        "KPIs",
+        "Google Business Profile",
+        "EPR",
+        "ABC"
+      ]
+    },
+    {
+      "id": "tfm-research-barcelona",
+      "course": "masters-thesis",
+      "week": 2,
+      "title": "Market research: Barcelona focus",
+      "date": "",
+      "path": "content/notes/tfm-research-barcelona.md",
+      "source": "tfm-mr-bcn-pdf",
+      "tags": [
+        "Barcelona",
+        "Gràcia",
+        "tourism",
+        "Instagram audit",
+        "Semrush",
+        "digital SWOT"
+      ]
+    },
+    {
+      "id": "tfm-research-combined",
+      "course": "masters-thesis",
+      "week": 2,
+      "title": "Market research: Poland and Barcelona combined",
+      "date": "",
+      "path": "content/notes/tfm-research-combined.md",
+      "source": "tfm-mr-combined-pdf",
+      "tags": [
+        "Poland",
+        "second-hand market",
+        "upcycled fashion",
+        "Instagram audit",
+        "competitors",
+        "EPR"
+      ]
+    },
+    {
+      "id": "tfm-sources",
+      "course": "masters-thesis",
+      "week": 3,
+      "title": "Sources and info for the thesis",
+      "date": "",
+      "path": "content/notes/tfm-sources.md",
+      "source": "tfm-sources-docx",
+      "tags": [
+        "Datareportal",
+        "SimilarWeb",
+        "Semrush",
+        "We Are Social",
+        "GEO"
+      ]
     }
   ],
-
   "files": [
-    { "id": "aidm-w1-notes-pdf", "course": "ai-digital-marketing", "week": 1, "kind": "Notes", "title": "Session 1 notes (PDF)", "path": "files/ai-digital-marketing/week-01-session-notes.pdf", "size": 87961 },
-    { "id": "aidm-w1-slides-pdf", "course": "ai-digital-marketing", "week": 1, "kind": "Slides", "title": "Lesson 1 slides", "path": "files/ai-digital-marketing/week-01-slides.pdf", "size": 547392 },
-    { "id": "wa-w1-notes-pdf", "course": "web-analytics", "week": 1, "kind": "Notes", "title": "First lesson summary (PDF)", "path": "files/web-analytics/week-01-session-notes.pdf", "size": 248534 },
-    { "id": "dmt-w1-summary-pdf", "course": "digital-marketing-tools", "week": 1, "kind": "Notes", "title": "Presentation notes, lesson 1 (PDF)", "path": "files/digital-marketing-tools/week-01-class-summary-crm.pdf", "size": 81242 },
-    { "id": "dmt-w1-prereading-pdf", "course": "digital-marketing-tools", "week": 1, "kind": "Reading", "title": "Pre-class reading summaries (PDF)", "path": "files/digital-marketing-tools/week-01-pre-reading-summaries.pdf", "size": 61419 },
-    { "id": "dmt-w1-slides-pdf", "course": "digital-marketing-tools", "week": 1, "kind": "Slides", "title": "Lesson 1 presentation: CRM in the age of AI", "path": "files/digital-marketing-tools/week-01-slides-crm.pdf", "size": 1455431 },
-    { "id": "deadlines-pdf", "course": "", "week": null, "kind": "Schedule", "title": "Master's deadlines 2026–27", "path": "files/general/la-salle-deadlines-2026-27.pdf", "size": 4141 }
+    {
+      "id": "aidm-w1-notes-pdf",
+      "course": "ai-digital-marketing",
+      "week": 1,
+      "kind": "Notes",
+      "title": "Session 1 notes (PDF)",
+      "path": "files/ai-digital-marketing/week-01-session-notes.pdf",
+      "size": 87961
+    },
+    {
+      "id": "aidm-w1-slides-pdf",
+      "course": "ai-digital-marketing",
+      "week": 1,
+      "kind": "Slides",
+      "title": "Lesson 1 slides",
+      "path": "files/ai-digital-marketing/week-01-slides.pdf",
+      "size": 547392
+    },
+    {
+      "id": "wa-w1-notes-pdf",
+      "course": "web-analytics",
+      "week": 1,
+      "kind": "Notes",
+      "title": "First lesson summary (PDF)",
+      "path": "files/web-analytics/week-01-session-notes.pdf",
+      "size": 248534
+    },
+    {
+      "id": "dmt-w1-summary-pdf",
+      "course": "digital-marketing-tools",
+      "week": 1,
+      "kind": "Notes",
+      "title": "Presentation notes, lesson 1 (PDF)",
+      "path": "files/digital-marketing-tools/week-01-class-summary-crm.pdf",
+      "size": 81242
+    },
+    {
+      "id": "dmt-w1-prereading-pdf",
+      "course": "digital-marketing-tools",
+      "week": 1,
+      "kind": "Reading",
+      "title": "Pre-class reading summaries (PDF)",
+      "path": "files/digital-marketing-tools/week-01-pre-reading-summaries.pdf",
+      "size": 61419
+    },
+    {
+      "id": "dmt-w1-slides-pdf",
+      "course": "digital-marketing-tools",
+      "week": 1,
+      "kind": "Slides",
+      "title": "Lesson 1 presentation: CRM in the age of AI",
+      "path": "files/digital-marketing-tools/week-01-slides-crm.pdf",
+      "size": 1455431
+    },
+    {
+      "id": "deadlines-pdf",
+      "course": "",
+      "week": null,
+      "kind": "Schedule",
+      "title": "Master's deadlines 2026–27",
+      "path": "files/general/la-salle-deadlines-2026-27.pdf",
+      "size": 4141
+    },
+    {
+      "id": "dma-w2-prereading-pdf",
+      "course": "digital-marketing-advertising",
+      "week": 2,
+      "kind": "Reading",
+      "title": "Lesson 2 pre-reading summaries (PDF)",
+      "path": "files/digital-marketing-advertising/week-02-pre-reading-summaries.pdf",
+      "size": 18854
+    },
+    {
+      "id": "dma-w3-prereading-pdf",
+      "course": "digital-marketing-advertising",
+      "week": 3,
+      "kind": "Reading",
+      "title": "Session 3 pre-reading summaries (PDF)",
+      "path": "files/digital-marketing-advertising/week-03-pre-reading-summaries.pdf",
+      "size": 13099
+    },
+    {
+      "id": "wa-w2-prereading-docx",
+      "course": "web-analytics",
+      "week": 2,
+      "kind": "Reading",
+      "title": "Lesson 2 pre-reading notes (Word)",
+      "path": "files/web-analytics/week-02-pre-reading-notes.docx",
+      "size": 16486
+    },
+    {
+      "id": "tfm-rd1-brief-docx",
+      "course": "masters-thesis",
+      "week": 1,
+      "kind": "Brief",
+      "title": "Deliverable 1 checklist (Word)",
+      "path": "files/masters-thesis/rd1-deliverable-1-brief.docx",
+      "size": 16353
+    },
+    {
+      "id": "tfm-rd1-research-pdf",
+      "course": "masters-thesis",
+      "week": 1,
+      "kind": "Research",
+      "title": "Deliverable 1 research: Jackob Buczynski in Barcelona (PDF)",
+      "path": "files/masters-thesis/rd1-deliverable-1-research.pdf",
+      "size": 298121
+    },
+    {
+      "id": "tfm-rd1-group-pdf",
+      "course": "masters-thesis",
+      "week": 1,
+      "kind": "Draft",
+      "title": "Group 4 TFM draft: From Warsaw to Barcelona (PDF)",
+      "path": "files/masters-thesis/rd1-group-4-tfm-draft.pdf",
+      "size": 18065711
+    },
+    {
+      "id": "tfm-rd1-graphics-pdf",
+      "course": "masters-thesis",
+      "week": 1,
+      "kind": "Graphics",
+      "title": "Barcelona research graphics, 15 charts (PDF)",
+      "path": "files/masters-thesis/rd1-barcelona-research-graphics.pdf",
+      "size": 1731024
+    },
+    {
+      "id": "tfm-mr-bcn-pdf",
+      "course": "masters-thesis",
+      "week": 2,
+      "kind": "Research",
+      "title": "Market research report: Barcelona focus (PDF)",
+      "path": "files/masters-thesis/research-barcelona-market-research.pdf",
+      "size": 183691
+    },
+    {
+      "id": "tfm-mr-combined-pdf",
+      "course": "masters-thesis",
+      "week": 2,
+      "kind": "Research",
+      "title": "Market research report: Poland and Barcelona (PDF)",
+      "path": "files/masters-thesis/research-poland-barcelona-market-research.pdf",
+      "size": 201741
+    },
+    {
+      "id": "tfm-semrush-img",
+      "course": "masters-thesis",
+      "week": 2,
+      "kind": "Screenshot",
+      "title": "Semrush traffic snapshot, Sep 2026 (image)",
+      "path": "files/masters-thesis/research-semrush-traffic-sep-2026.jpg",
+      "size": 42218
+    },
+    {
+      "id": "tfm-sources-docx",
+      "course": "masters-thesis",
+      "week": 3,
+      "kind": "Notes",
+      "title": "Sources and info (Word)",
+      "path": "files/masters-thesis/resources-sources-and-info.docx",
+      "size": 13675
+    }
   ],
-
   "deadlines": [
-    { "id": "d01", "date": "2026-11-02", "time": "19:00", "course": "digital-marketing-advertising", "type": "RD1", "title": "Pecha Kucha (20 slides × 20 sec) explaining your project", "notes": "First deadline" },
-    { "id": "d02", "date": "2026-11-09", "time": "19:00", "course": "digital-marketing-advertising", "type": "RD2", "title": "Strategic objectives and consumer decision journey during the annual plan", "notes": "" },
-    { "id": "d03", "date": "2026-11-17", "time": "19:00", "course": "digital-marketing-tools", "type": "RD3", "title": "Marketing Mix (sections 4–7)", "notes": "" },
-    { "id": "d04", "date": "2026-11-25", "time": "19:00–19:20", "course": "digital-marketing-advertising", "type": "Exam", "title": "First module exam", "notes": "" },
-    { "id": "d05", "date": "2026-11-30", "time": "19:00", "course": "ai-digital-marketing", "type": "RD5", "title": "Website objectives and structure; wireframes and text content for each page", "notes": "" },
-    { "id": "d06", "date": "2026-12-03", "time": "19:00–19:20", "course": "web-analytics", "type": "Exam", "title": "First module exam", "notes": "" },
-    { "id": "d07", "date": "2026-12-08", "time": "19:00", "course": "digital-marketing-tools", "type": "RD4", "title": "SEO (section 9)", "notes": "Due after RD5 despite the numbering" },
-    { "id": "d08", "date": "2027-01-18", "time": "19:00", "course": "ai-digital-marketing", "type": "RD6", "title": "Completed site with content, data and legal aspects (written feedback)", "notes": "" },
-    { "id": "d09", "date": "2027-01-18", "time": "19:00", "course": "web-analytics", "type": "RD7", "title": "Digital Advertising (section 10)", "notes": "Same evening as RD6" },
-    { "id": "d10", "date": "2027-01-25", "time": "19:00", "course": "web-analytics", "type": "RD8", "title": "Social Media Marketing (section 11)", "notes": "" },
-    { "id": "d11", "date": "2027-01-27", "time": "19:00–19:20", "course": "digital-marketing-tools", "type": "Exam", "title": "Second module exam", "notes": "" },
-    { "id": "d12", "date": "2027-02-03", "time": "19:00–19:20", "course": "ai-digital-marketing", "type": "Exam", "title": "Second module exam", "notes": "" },
-    { "id": "d13", "date": "2027-02-08", "time": "19:00", "course": "marketing-ecommerce", "type": "RD9", "title": "Analysis and follow-up (section 12)", "notes": "" },
-    { "id": "d14", "date": "2027-02-11", "time": "19:00–19:20", "course": "marketing-ecommerce", "type": "Exam", "title": "Second module exam", "notes": "" },
-    { "id": "d15", "date": "2027-02-15", "time": "19:00–19:20", "course": "all", "type": "Exam", "title": "Recovery exams (all first- and second-module courses)", "notes": "Classroom to confirm" },
-    { "id": "d16", "date": "2027-02-19", "time": "23:55", "course": "masters-thesis", "type": "FMT", "title": "Thesis upload: group copy in eStudy, individual copy in eSecretary", "notes": "" },
-    { "id": "d17", "date": "2027-02-21", "time": "23:55", "course": "masters-thesis", "type": "FMT", "title": "PowerPoint presentation upload to the eStudy folder", "notes": "" },
-    { "id": "d18", "date": "2027-02-23", "time": "19:00–22:00", "course": "masters-thesis", "type": "FMT", "title": "Final Project defense (oral presentation of the thesis)", "notes": "" }
+    {
+      "id": "d01",
+      "date": "2026-11-02",
+      "time": "19:00",
+      "course": "digital-marketing-advertising",
+      "type": "RD1",
+      "title": "Pecha Kucha (20 slides × 20 sec) explaining your project",
+      "notes": "First deadline"
+    },
+    {
+      "id": "d02",
+      "date": "2026-11-09",
+      "time": "19:00",
+      "course": "digital-marketing-advertising",
+      "type": "RD2",
+      "title": "Strategic objectives and consumer decision journey during the annual plan",
+      "notes": ""
+    },
+    {
+      "id": "d03",
+      "date": "2026-11-17",
+      "time": "19:00",
+      "course": "digital-marketing-tools",
+      "type": "RD3",
+      "title": "Marketing Mix (sections 4–7)",
+      "notes": ""
+    },
+    {
+      "id": "d04",
+      "date": "2026-11-25",
+      "time": "19:00–19:20",
+      "course": "digital-marketing-advertising",
+      "type": "Exam",
+      "title": "First module exam",
+      "notes": ""
+    },
+    {
+      "id": "d05",
+      "date": "2026-11-30",
+      "time": "19:00",
+      "course": "ai-digital-marketing",
+      "type": "RD5",
+      "title": "Website objectives and structure; wireframes and text content for each page",
+      "notes": ""
+    },
+    {
+      "id": "d06",
+      "date": "2026-12-03",
+      "time": "19:00–19:20",
+      "course": "web-analytics",
+      "type": "Exam",
+      "title": "First module exam",
+      "notes": ""
+    },
+    {
+      "id": "d07",
+      "date": "2026-12-08",
+      "time": "19:00",
+      "course": "digital-marketing-tools",
+      "type": "RD4",
+      "title": "SEO (section 9)",
+      "notes": "Due after RD5 despite the numbering"
+    },
+    {
+      "id": "d08",
+      "date": "2027-01-18",
+      "time": "19:00",
+      "course": "ai-digital-marketing",
+      "type": "RD6",
+      "title": "Completed site with content, data and legal aspects (written feedback)",
+      "notes": ""
+    },
+    {
+      "id": "d09",
+      "date": "2027-01-18",
+      "time": "19:00",
+      "course": "web-analytics",
+      "type": "RD7",
+      "title": "Digital Advertising (section 10)",
+      "notes": "Same evening as RD6"
+    },
+    {
+      "id": "d10",
+      "date": "2027-01-25",
+      "time": "19:00",
+      "course": "web-analytics",
+      "type": "RD8",
+      "title": "Social Media Marketing (section 11)",
+      "notes": ""
+    },
+    {
+      "id": "d11",
+      "date": "2027-01-27",
+      "time": "19:00–19:20",
+      "course": "digital-marketing-tools",
+      "type": "Exam",
+      "title": "Second module exam",
+      "notes": ""
+    },
+    {
+      "id": "d12",
+      "date": "2027-02-03",
+      "time": "19:00–19:20",
+      "course": "ai-digital-marketing",
+      "type": "Exam",
+      "title": "Second module exam",
+      "notes": ""
+    },
+    {
+      "id": "d13",
+      "date": "2027-02-08",
+      "time": "19:00",
+      "course": "marketing-ecommerce",
+      "type": "RD9",
+      "title": "Analysis and follow-up (section 12)",
+      "notes": ""
+    },
+    {
+      "id": "d14",
+      "date": "2027-02-11",
+      "time": "19:00–19:20",
+      "course": "marketing-ecommerce",
+      "type": "Exam",
+      "title": "Second module exam",
+      "notes": ""
+    },
+    {
+      "id": "d15",
+      "date": "2027-02-15",
+      "time": "19:00–19:20",
+      "course": "all",
+      "type": "Exam",
+      "title": "Recovery exams (all first- and second-module courses)",
+      "notes": "Classroom to confirm"
+    },
+    {
+      "id": "d16",
+      "date": "2027-02-19",
+      "time": "23:55",
+      "course": "masters-thesis",
+      "type": "FMT",
+      "title": "Thesis upload: group copy in eStudy, individual copy in eSecretary",
+      "notes": ""
+    },
+    {
+      "id": "d17",
+      "date": "2027-02-21",
+      "time": "23:55",
+      "course": "masters-thesis",
+      "type": "FMT",
+      "title": "PowerPoint presentation upload to the eStudy folder",
+      "notes": ""
+    },
+    {
+      "id": "d18",
+      "date": "2027-02-23",
+      "time": "19:00–22:00",
+      "course": "masters-thesis",
+      "type": "FMT",
+      "title": "Final Project defense (oral presentation of the thesis)",
+      "notes": ""
+    }
   ],
-
   "library": {
     "cases": [
-      { "id": "c-loop", "title": "LOOP: an AI-assisted launch workflow", "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "tags": ["prompting", "attribution", "claims"], "summary": "A fictional Barcelona bottle brand (750 ml steel, €29) taken from brief to launch in ChatGPT Work: competitor brief → campaign data → creative options → launch package, with a human review after each step.", "lesson": "Each reviewed output becomes the input for the next task. Every claim needs a source or a stated uncertainty." },
-      { "id": "c-euromon", "title": "Euromon PLV: the confident wrong audit", "course": "web-analytics", "note": "wa-w1-session-notes", "tags": ["AI audit", "source quality"], "summary": "An AI-prepared “How to improve your website” deck claimed the site was on Wix with English locked as the main language. Its only source was a deleted Reddit post from July 2024; the site had already left Wix.", "lesson": "AI analyses only what it is given. Always check the source." },
-      { "id": "c-geo", "title": "GEO with aipopdisplays.com", "course": "web-analytics", "note": "wa-w1-session-notes", "tags": ["GEO", "SEO", "LLM visibility"], "summary": "After the professor published content on aipopdisplays.com, ChatGPT listed Euromon PLV first (Oct 2026) when asked in Spanish for the best POP display manufacturers.", "lesson": "Timing matches, but it's a short window: correlation, not proof. Manipulation or the new SEO?" },
-      { "id": "c-gsc", "title": "Search Console drop: screenshots vs export", "course": "web-analytics", "note": "wa-w1-session-notes", "tags": ["Search Console", "data input"], "summary": "On 8 Oct a post fell to 0 impressions. Given two screenshots, the AI blamed a site-wide anti-spam update. Given a two-week export, it found 3 pages caused 97% of the loss and clicks went from 7 to 8.", "lesson": "The same AI reaches opposite conclusions depending on the input." },
-      { "id": "c-higgsfield", "title": "Higgsfield: five prices in 15 minutes", "course": "web-analytics", "note": "wa-w1-session-notes", "tags": ["dynamic pricing", "dark patterns"], "summary": "The same person viewing the same Plus plan saw €35, €59, €32, €56 and €35 per month through countdowns, “personal” offers and exit-intent discounts. Banners claimed 55% and 62% off; real discounts were 40% and 46%.", "lesson": "Smart growth or dark pattern?" },
-      { "id": "c-blockblast", "title": "Block Blast: an ad harvester", "course": "web-analytics", "note": "wa-w1-session-notes", "tags": ["personalisation", "ethics"], "summary": "A creator's reverse-engineering claims (not independently verified): an on-device XGBoost model predicts your ad value, then difficulty is tuned (“boost then kill”) to push you towards revive ads.", "lesson": "Personalisation that helps users can be turned against them." },
-      { "id": "c-amazon-cv", "title": "Amazon's CV-scoring AI (2014–2017)", "course": "web-analytics", "note": "wa-w1-session-notes", "tags": ["bias", "HR"], "summary": "Trained on ten years of mostly male CVs, it marked down CVs containing “women's” and was scrapped in 2017 because Amazon couldn't guarantee it wouldn't discriminate in other ways.", "lesson": "Models amplify the bias in their data: audit regularly, use diverse data." },
-      { "id": "c-agents", "title": "AI agent trading desks", "course": "web-analytics", "note": "wa-w1-session-notes", "tags": ["agents", "oversight"], "summary": "Third-party setups on xAI's Grok Bot (e.g. open-source HyperGrok) run up to 7 agents that gather data, analyse, decide and trade. A dedicated sceptic agent stops the others just agreeing. No profits verified.", "lesson": "AI has moved from recommending to acting, so human oversight becomes the analyst's core value." },
-      { "id": "c-data-edge", "title": "Netflix, Amazon, Zara: data as the edge", "course": "web-analytics", "note": "wa-w1-session-notes", "tags": ["competitive advantage"], "summary": "Netflix: ~80% of viewing comes from recommendations. Amazon: AI across the value chain (pricing, fraud, logistics). Zara: trend and sales data put designs in stores in weeks.", "lesson": "If everyone has the same AI, the edge comes from your own data." },
-      { "id": "c-playstation", "title": "PlayStation and digital ownership", "course": "web-analytics", "note": "wa-w1-session-notes", "tags": ["reverse engineering", "ownership"], "summary": "Physical discs end for new games in Jan 2028; games are “licensed to you, not sold”. Meanwhile AI-assisted tools like AnyPS5 port PS5 games to PC.", "lesson": "When AI can reverse-engineer anything, complexity stops being a form of security." },
-      { "id": "c-cart", "title": "Abandoned cart in fashion e-commerce", "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "tags": ["CRM methodology", "automation"], "summary": "Trigger: cart not bought within 2 h. Target: registered, opted-in, cart over €50. Content: products and size in stock, no discount the first time. Channel: email, then app push after 24 h unopened.", "lesson": "AI adds value by predicting who'll buy without an incentive, writing copy per customer and picking send time." },
-      { "id": "c-softdrink", "title": "A soft drink's many customers", "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "tags": ["defining the customer", "B2B", "B2C"], "summary": "One can has B2C customers (out-of-home consumer, household shopper, young buyer, family influence) and B2B customers (HORECA, distributors, vending, HR directors, gym managers).", "lesson": "Buyer, user, decision-maker and influencer are not always the same person — and AI assistants are now influencers." },
-      { "id": "c-cx-brands", "title": "Experience as a sales driver", "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "tags": ["CX"], "summary": "Amazon (convenience: one click, easy returns), Apple (ritual: store and launch), Nike (community: apps and membership), Spotify (data → content: Wrapped).", "lesson": "CX is the sum of every interaction: what customers do, feel and remember." }
+      {
+        "id": "c-loop",
+        "title": "LOOP: an AI-assisted launch workflow",
+        "course": "ai-digital-marketing",
+        "note": "aidm-w1-session-notes",
+        "tags": [
+          "prompting",
+          "attribution",
+          "claims"
+        ],
+        "summary": "A fictional Barcelona bottle brand (750 ml steel, €29) taken from brief to launch in ChatGPT Work: competitor brief → campaign data → creative options → launch package, with a human review after each step.",
+        "lesson": "Each reviewed output becomes the input for the next task. Every claim needs a source or a stated uncertainty."
+      },
+      {
+        "id": "c-euromon",
+        "title": "Euromon PLV: the confident wrong audit",
+        "course": "web-analytics",
+        "note": "wa-w1-session-notes",
+        "tags": [
+          "AI audit",
+          "source quality"
+        ],
+        "summary": "An AI-prepared “How to improve your website” deck claimed the site was on Wix with English locked as the main language. Its only source was a deleted Reddit post from July 2024; the site had already left Wix.",
+        "lesson": "AI analyses only what it is given. Always check the source."
+      },
+      {
+        "id": "c-geo",
+        "title": "GEO with aipopdisplays.com",
+        "course": "web-analytics",
+        "note": "wa-w1-session-notes",
+        "tags": [
+          "GEO",
+          "SEO",
+          "LLM visibility"
+        ],
+        "summary": "After the professor published content on aipopdisplays.com, ChatGPT listed Euromon PLV first (Oct 2026) when asked in Spanish for the best POP display manufacturers.",
+        "lesson": "Timing matches, but it's a short window: correlation, not proof. Manipulation or the new SEO?"
+      },
+      {
+        "id": "c-gsc",
+        "title": "Search Console drop: screenshots vs export",
+        "course": "web-analytics",
+        "note": "wa-w1-session-notes",
+        "tags": [
+          "Search Console",
+          "data input"
+        ],
+        "summary": "On 8 Oct a post fell to 0 impressions. Given two screenshots, the AI blamed a site-wide anti-spam update. Given a two-week export, it found 3 pages caused 97% of the loss and clicks went from 7 to 8.",
+        "lesson": "The same AI reaches opposite conclusions depending on the input."
+      },
+      {
+        "id": "c-higgsfield",
+        "title": "Higgsfield: five prices in 15 minutes",
+        "course": "web-analytics",
+        "note": "wa-w1-session-notes",
+        "tags": [
+          "dynamic pricing",
+          "dark patterns"
+        ],
+        "summary": "The same person viewing the same Plus plan saw €35, €59, €32, €56 and €35 per month through countdowns, “personal” offers and exit-intent discounts. Banners claimed 55% and 62% off; real discounts were 40% and 46%.",
+        "lesson": "Smart growth or dark pattern?"
+      },
+      {
+        "id": "c-blockblast",
+        "title": "Block Blast: an ad harvester",
+        "course": "web-analytics",
+        "note": "wa-w1-session-notes",
+        "tags": [
+          "personalisation",
+          "ethics"
+        ],
+        "summary": "A creator's reverse-engineering claims (not independently verified): an on-device XGBoost model predicts your ad value, then difficulty is tuned (“boost then kill”) to push you towards revive ads.",
+        "lesson": "Personalisation that helps users can be turned against them."
+      },
+      {
+        "id": "c-amazon-cv",
+        "title": "Amazon's CV-scoring AI (2014–2017)",
+        "course": "web-analytics",
+        "note": "wa-w1-session-notes",
+        "tags": [
+          "bias",
+          "HR"
+        ],
+        "summary": "Trained on ten years of mostly male CVs, it marked down CVs containing “women's” and was scrapped in 2017 because Amazon couldn't guarantee it wouldn't discriminate in other ways.",
+        "lesson": "Models amplify the bias in their data: audit regularly, use diverse data."
+      },
+      {
+        "id": "c-agents",
+        "title": "AI agent trading desks",
+        "course": "web-analytics",
+        "note": "wa-w1-session-notes",
+        "tags": [
+          "agents",
+          "oversight"
+        ],
+        "summary": "Third-party setups on xAI's Grok Bot (e.g. open-source HyperGrok) run up to 7 agents that gather data, analyse, decide and trade. A dedicated sceptic agent stops the others just agreeing. No profits verified.",
+        "lesson": "AI has moved from recommending to acting, so human oversight becomes the analyst's core value."
+      },
+      {
+        "id": "c-data-edge",
+        "title": "Netflix, Amazon, Zara: data as the edge",
+        "course": "web-analytics",
+        "note": "wa-w1-session-notes",
+        "tags": [
+          "competitive advantage"
+        ],
+        "summary": "Netflix: ~80% of viewing comes from recommendations. Amazon: AI across the value chain (pricing, fraud, logistics). Zara: trend and sales data put designs in stores in weeks.",
+        "lesson": "If everyone has the same AI, the edge comes from your own data."
+      },
+      {
+        "id": "c-playstation",
+        "title": "PlayStation and digital ownership",
+        "course": "web-analytics",
+        "note": "wa-w1-session-notes",
+        "tags": [
+          "reverse engineering",
+          "ownership"
+        ],
+        "summary": "Physical discs end for new games in Jan 2028; games are “licensed to you, not sold”. Meanwhile AI-assisted tools like AnyPS5 port PS5 games to PC.",
+        "lesson": "When AI can reverse-engineer anything, complexity stops being a form of security."
+      },
+      {
+        "id": "c-cart",
+        "title": "Abandoned cart in fashion e-commerce",
+        "course": "digital-marketing-tools",
+        "note": "dmt-w1-crm-summary",
+        "tags": [
+          "CRM methodology",
+          "automation"
+        ],
+        "summary": "Trigger: cart not bought within 2 h. Target: registered, opted-in, cart over €50. Content: products and size in stock, no discount the first time. Channel: email, then app push after 24 h unopened.",
+        "lesson": "AI adds value by predicting who'll buy without an incentive, writing copy per customer and picking send time."
+      },
+      {
+        "id": "c-softdrink",
+        "title": "A soft drink's many customers",
+        "course": "digital-marketing-tools",
+        "note": "dmt-w1-crm-summary",
+        "tags": [
+          "defining the customer",
+          "B2B",
+          "B2C"
+        ],
+        "summary": "One can has B2C customers (out-of-home consumer, household shopper, young buyer, family influence) and B2B customers (HORECA, distributors, vending, HR directors, gym managers).",
+        "lesson": "Buyer, user, decision-maker and influencer are not always the same person — and AI assistants are now influencers."
+      },
+      {
+        "id": "c-cx-brands",
+        "title": "Experience as a sales driver",
+        "course": "digital-marketing-tools",
+        "note": "dmt-w1-crm-summary",
+        "tags": [
+          "CX"
+        ],
+        "summary": "Amazon (convenience: one click, easy returns), Apple (ritual: store and launch), Nike (community: apps and membership), Spotify (data → content: Wrapped).",
+        "lesson": "CX is the sum of every interaction: what customers do, feel and remember."
+      },
+      {
+        "id": "c-jackob",
+        "title": "Jackob Buczynski: from Warsaw to Barcelona",
+        "course": "masters-thesis",
+        "note": "tfm-rd1-deliverable",
+        "tags": [
+          "upcycling",
+          "local SEO",
+          "Instagram",
+          "positioning"
+        ],
+        "summary": "A Polish upcycling brand with 96.9k Instagram followers opens a boutique in Gràcia, but its Barcelona Reels fall from ≈25–28k to 7.9k views, the boutique account has 343 followers, opening hours are 25 a week and no Google Maps listing exists.",
+        "lesson": "Reach in one market does not transfer: the problem is distribution and findability, not content quality."
+      },
+      {
+        "id": "c-digital-strategy",
+        "title": "Digital strategy in practice: Adobe, Starbucks, Renault",
+        "course": "digital-marketing-advertising",
+        "note": "dma-w2-pre-reading",
+        "tags": [
+          "digital strategy",
+          "business model"
+        ],
+        "summary": "Adobe moved to the Creative Cloud subscription model; Starbucks integrated mobile ordering, payments and loyalty; Renault ran 15 digital pilots across functions, achieving a 25% increase in EBIT.",
+        "lesson": "A digital strategy reaches beyond marketing into business models and operations."
+      }
     ],
     "tools": [
-      { "id": "t-chatgpt-work", "title": "ChatGPT Work", "category": "AI assistant", "course": "ai-digital-marketing", "url": "https://chatgpt.com", "summary": "Used for the four LOOP demos: tasks that produce artifacts (spreadsheets, decks, research briefs) from uploaded files and connected tools." },
-      { "id": "t-gsc", "title": "Google Search Console", "category": "Web analytics", "course": "web-analytics", "url": "https://search.google.com/search-console", "summary": "Source of the impressions export in the Search Console drop case. Exports beat screenshots as AI input." },
-      { "id": "t-agentforce", "title": "Salesforce Agentforce", "category": "CRM · AI layer", "course": "digital-marketing-tools", "url": "https://www.salesforce.com", "summary": "Autonomous agents for sales, service and marketing." },
-      { "id": "t-breeze", "title": "HubSpot Breeze", "category": "CRM · AI layer", "course": "digital-marketing-tools", "url": "https://www.hubspot.com", "summary": "Assistant plus customer, prospecting and data agents." },
-      { "id": "t-copilot", "title": "Microsoft Dynamics 365 Copilot", "category": "CRM · AI layer", "course": "digital-marketing-tools", "url": "https://dynamics.microsoft.com", "summary": "CRM with Copilot integrated into Outlook, Teams and Office." },
-      { "id": "t-zia", "title": "Zoho CRM (Zia)", "category": "CRM · AI layer", "course": "digital-marketing-tools", "url": "https://www.zoho.com/crm/", "summary": "Assistant and predictions aimed at SMEs." },
-      { "id": "t-pipedrive", "title": "Pipedrive AI assistant", "category": "CRM · AI layer", "course": "digital-marketing-tools", "url": "https://www.pipedrive.com", "summary": "Suggests next steps in the sales pipeline." },
-      { "id": "t-miro", "title": "Miro", "category": "Collaboration", "course": "digital-marketing-tools", "url": "https://miro.com", "summary": "One of the suggested formats for the CRM + AI canvas in the group sprint." }
+      {
+        "id": "t-chatgpt-work",
+        "title": "ChatGPT Work",
+        "category": "AI assistant",
+        "course": "ai-digital-marketing",
+        "url": "https://chatgpt.com",
+        "summary": "Used for the four LOOP demos: tasks that produce artifacts (spreadsheets, decks, research briefs) from uploaded files and connected tools."
+      },
+      {
+        "id": "t-gsc",
+        "title": "Google Search Console",
+        "category": "Web analytics",
+        "course": "web-analytics",
+        "url": "https://search.google.com/search-console",
+        "summary": "Source of the impressions export in the Search Console drop case. Exports beat screenshots as AI input. Also the free baseline in the DMA keyword-research workflow: the queries, impressions and clicks you already rank for."
+      },
+      {
+        "id": "t-agentforce",
+        "title": "Salesforce Agentforce",
+        "category": "CRM · AI layer",
+        "course": "digital-marketing-tools",
+        "url": "https://www.salesforce.com",
+        "summary": "Autonomous agents for sales, service and marketing."
+      },
+      {
+        "id": "t-breeze",
+        "title": "HubSpot Breeze",
+        "category": "CRM · AI layer",
+        "course": "digital-marketing-tools",
+        "url": "https://www.hubspot.com",
+        "summary": "Assistant plus customer, prospecting and data agents."
+      },
+      {
+        "id": "t-copilot",
+        "title": "Microsoft Dynamics 365 Copilot",
+        "category": "CRM · AI layer",
+        "course": "digital-marketing-tools",
+        "url": "https://dynamics.microsoft.com",
+        "summary": "CRM with Copilot integrated into Outlook, Teams and Office."
+      },
+      {
+        "id": "t-zia",
+        "title": "Zoho CRM (Zia)",
+        "category": "CRM · AI layer",
+        "course": "digital-marketing-tools",
+        "url": "https://www.zoho.com/crm/",
+        "summary": "Assistant and predictions aimed at SMEs."
+      },
+      {
+        "id": "t-pipedrive",
+        "title": "Pipedrive AI assistant",
+        "category": "CRM · AI layer",
+        "course": "digital-marketing-tools",
+        "url": "https://www.pipedrive.com",
+        "summary": "Suggests next steps in the sales pipeline."
+      },
+      {
+        "id": "t-miro",
+        "title": "Miro",
+        "category": "Collaboration",
+        "course": "digital-marketing-tools",
+        "url": "https://miro.com",
+        "summary": "One of the suggested formats for the CRM + AI canvas in the group sprint."
+      },
+      {
+        "id": "t-semrush",
+        "title": "Semrush",
+        "category": "SEO suite",
+        "course": "digital-marketing-advertising",
+        "url": "https://www.semrush.com",
+        "summary": "All-in-one SEO and competitor platform. Keyword Magic Tool filters keywords by intent, difficulty and SERP features; also used for competitor ad and traffic comparison in the thesis."
+      },
+      {
+        "id": "t-ahrefs",
+        "title": "Ahrefs",
+        "category": "SEO suite",
+        "course": "digital-marketing-advertising",
+        "url": "https://ahrefs.com",
+        "summary": "Data depth, backlink-informed keyword discovery and traffic-potential metrics."
+      },
+      {
+        "id": "t-gkp",
+        "title": "Google Keyword Planner",
+        "category": "Keyword research",
+        "course": "digital-marketing-advertising",
+        "url": "https://ads.google.com/home/tools/keyword-planner/",
+        "summary": "The “source of truth” from Google Ads: raw search volume, seasonality and CPC estimates."
+      },
+      {
+        "id": "t-seranking",
+        "title": "SE Ranking",
+        "category": "SEO suite",
+        "course": "digital-marketing-advertising",
+        "url": "https://seranking.com",
+        "summary": "A more budget-friendly suite with rank tracking and keyword research."
+      },
+      {
+        "id": "t-ubersuggest",
+        "title": "Ubersuggest / KWFinder",
+        "category": "Keyword research",
+        "course": "digital-marketing-advertising",
+        "url": "https://kwfinder.com",
+        "summary": "Simple dashboards for beginners and small budgets, built for low-competition long-tail opportunities."
+      },
+      {
+        "id": "t-atp",
+        "title": "AnswerThePublic",
+        "category": "Keyword ideation",
+        "course": "digital-marketing-advertising",
+        "url": "https://answerthepublic.com",
+        "summary": "Visual maps of question-based searches (how, why, what, versus) for FAQs and conversational prompts."
+      },
+      {
+        "id": "t-similarweb",
+        "title": "SimilarWeb",
+        "category": "Competitor traffic",
+        "course": "masters-thesis",
+        "url": "https://www.similarweb.com",
+        "summary": "Look up competitors’ website traffic (from the thesis sources list)."
+      },
+      {
+        "id": "t-harvey",
+        "title": "Harvey AI",
+        "category": "AI research",
+        "course": "masters-thesis",
+        "summary": "Listed in the thesis sources as a tool to find competitors and best customers."
+      }
     ],
     "resources": [
-      { "id": "r-noy-zhang", "title": "Noy & Zhang (2023), Experimental evidence on the productivity effects of generative AI", "category": "Study", "course": "ai-digital-marketing", "url": "https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1_0.pdf", "summary": "Science, July 2023. 453 professionals on writing tasks: with ChatGPT, time fell ~40% and quality rose ~18%. Limits: specific tasks, older model, graders didn't fact-check." },
-      { "id": "r-stanford-scale", "title": "Stanford SCALE summary of Noy & Zhang", "category": "Study", "course": "ai-digital-marketing", "url": "https://scale.stanford.edu/publications/experimental-evidence-productivity-effects-generative-artificial-intelligence", "summary": "Listed in the session 1 sources." },
-      { "id": "r-empco", "title": "Directive (EU) 2024/825 — Empowering Consumers for the Green Transition (EmpCo)", "category": "Law", "course": "ai-digital-marketing", "url": "https://transition-pathways.europa.eu/legislation/directive-eu-2024825-empowering-consumer-green-transition", "summary": "Since 27 Sep 2026 bars generic environmental claims (e.g. “the most sustainable bottle in Europe”) without recognised evidence. Applies in Spain." },
-      { "id": "r-ai-act", "title": "EU AI Act — Regulation (EU) 2024/1689", "category": "Law", "course": "digital-marketing-tools", "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj", "summary": "Feb 2025: AI literacy and prohibited practices. Aug 2026: transparency (tell people they're talking to an AI, label generated content). Dec 2027: high-risk systems, postponed by the Digital Omnibus." },
-      { "id": "r-gdpr", "title": "GDPR — Regulation (EU) 2016/679", "category": "Law", "course": "digital-marketing-tools", "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj", "summary": "Legal basis per purpose, data minimisation, transparency. Art. 22: right not to be subject to solely automated decisions." },
-      { "id": "r-lopdgdd", "title": "LOPDGDD — Ley Orgánica 3/2018 (BOE)", "category": "Law", "course": "digital-marketing-tools", "url": "https://www.boe.es/boe/dias/2018/12/06/pdfs/BOE-A-2018-16673.pdf", "summary": "Spain's data protection law that sits alongside GDPR." },
-      { "id": "r-amazon-reuters", "title": "Amazon scraps secret AI recruiting tool that showed bias against women", "category": "Article", "course": "web-analytics", "url": "https://www.euronews.com/2018/10/10/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women", "summary": "Reuters report, 10 Oct 2018 (Euronews syndication). Source for the Amazon CV-scoring case." },
-      { "id": "r-netflix", "title": "Gomez-Uribe & Hunt (2015), The Netflix Recommender System", "category": "Paper", "course": "web-analytics", "url": "https://doi.org/10.1145/2843948", "summary": "ACM TMIS. Source for “about 80% of what people watch comes from recommendations”." },
-      { "id": "r-prereading", "title": "Pre-reading: CDP vs. DMP vs. CRM and AI-powered CDPs", "category": "Reading", "course": "digital-marketing-tools", "noteRef": "dmt-w1-pre-reading", "summary": "Summaries of the three articles read before DMT session 1." },
-      { "id": "r-deadlines", "title": "Master's deadlines 2026–27", "category": "Schedule", "course": "", "fileRef": "deadlines-pdf", "summary": "From eStudy assignment lists (checked 27 Oct 2026) and the Key Milestones exam schedule. RD = revisable document hand-in · FMT = Final Master Thesis." }
+      {
+        "id": "r-noy-zhang",
+        "title": "Noy & Zhang (2023), Experimental evidence on the productivity effects of generative AI",
+        "category": "Study",
+        "course": "ai-digital-marketing",
+        "url": "https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1_0.pdf",
+        "summary": "Science, July 2023. 453 professionals on writing tasks: with ChatGPT, time fell ~40% and quality rose ~18%. Limits: specific tasks, older model, graders didn't fact-check."
+      },
+      {
+        "id": "r-stanford-scale",
+        "title": "Stanford SCALE summary of Noy & Zhang",
+        "category": "Study",
+        "course": "ai-digital-marketing",
+        "url": "https://scale.stanford.edu/publications/experimental-evidence-productivity-effects-generative-artificial-intelligence",
+        "summary": "Listed in the session 1 sources."
+      },
+      {
+        "id": "r-empco",
+        "title": "Directive (EU) 2024/825 — Empowering Consumers for the Green Transition (EmpCo)",
+        "category": "Law",
+        "course": "ai-digital-marketing",
+        "url": "https://transition-pathways.europa.eu/legislation/directive-eu-2024825-empowering-consumer-green-transition",
+        "summary": "Since 27 Sep 2026 bars generic environmental claims (e.g. “the most sustainable bottle in Europe”) without recognised evidence. Applies in Spain."
+      },
+      {
+        "id": "r-ai-act",
+        "title": "EU AI Act — Regulation (EU) 2024/1689",
+        "category": "Law",
+        "course": "digital-marketing-tools",
+        "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+        "summary": "Feb 2025: AI literacy and prohibited practices. Aug 2026: transparency (tell people they're talking to an AI, label generated content). Dec 2027: high-risk systems, postponed by the Digital Omnibus."
+      },
+      {
+        "id": "r-gdpr",
+        "title": "GDPR — Regulation (EU) 2016/679",
+        "category": "Law",
+        "course": "digital-marketing-tools",
+        "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "summary": "Legal basis per purpose, data minimisation, transparency. Art. 22: right not to be subject to solely automated decisions."
+      },
+      {
+        "id": "r-lopdgdd",
+        "title": "LOPDGDD — Ley Orgánica 3/2018 (BOE)",
+        "category": "Law",
+        "course": "digital-marketing-tools",
+        "url": "https://www.boe.es/boe/dias/2018/12/06/pdfs/BOE-A-2018-16673.pdf",
+        "summary": "Spain's data protection law that sits alongside GDPR."
+      },
+      {
+        "id": "r-amazon-reuters",
+        "title": "Amazon scraps secret AI recruiting tool that showed bias against women",
+        "category": "Article",
+        "course": "web-analytics",
+        "url": "https://www.euronews.com/2018/10/10/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women",
+        "summary": "Reuters report, 10 Oct 2018 (Euronews syndication). Source for the Amazon CV-scoring case."
+      },
+      {
+        "id": "r-netflix",
+        "title": "Gomez-Uribe & Hunt (2015), The Netflix Recommender System",
+        "category": "Paper",
+        "course": "web-analytics",
+        "url": "https://doi.org/10.1145/2843948",
+        "summary": "ACM TMIS. Source for “about 80% of what people watch comes from recommendations”."
+      },
+      {
+        "id": "r-prereading",
+        "title": "Pre-reading: CDP vs. DMP vs. CRM and AI-powered CDPs",
+        "category": "Reading",
+        "course": "digital-marketing-tools",
+        "noteRef": "dmt-w1-pre-reading",
+        "summary": "Summaries of the three articles read before DMT session 1."
+      },
+      {
+        "id": "r-deadlines",
+        "title": "Master's deadlines 2026–27",
+        "category": "Schedule",
+        "course": "",
+        "fileRef": "deadlines-pdf",
+        "summary": "From eStudy assignment lists (checked 27 Oct 2026) and the Key Milestones exam schedule. RD = revisable document hand-in · FMT = Final Master Thesis."
+      },
+      {
+        "id": "r-datareportal",
+        "title": "DataReportal",
+        "category": "Data",
+        "course": "masters-thesis",
+        "url": "https://datareportal.com",
+        "summary": "Digital and social media statistics by country — recommended for market research."
+      },
+      {
+        "id": "r-wearesocial",
+        "title": "We Are Social",
+        "category": "Data",
+        "course": "masters-thesis",
+        "url": "https://wearesocial.com",
+        "summary": "Reports on average spending and digital behaviour across markets."
+      },
+      {
+        "id": "r-race",
+        "title": "RACE Growth System (Smart Insights)",
+        "category": "Framework",
+        "course": "digital-marketing-advertising",
+        "noteRef": "dma-w2-pre-reading",
+        "summary": "Opportunity → Strategy → Action, mapped onto situation analysis, strategy creation and implementation; often run as agile 90-day plans."
+      }
     ]
   },
-
   "formulas": [
-    { "name": "CTR", "long": "Click-through rate", "formula": "clicks ÷ impressions", "course": "ai-digital-marketing" },
-    { "name": "Conversion rate", "long": "Purchase conversion rate", "formula": "purchases ÷ clicks", "course": "ai-digital-marketing" },
-    { "name": "CPA", "long": "Cost per acquisition", "formula": "spend ÷ purchases", "course": "ai-digital-marketing" },
-    { "name": "ROAS", "long": "Return on ad spend", "formula": "revenue ÷ spend", "course": "ai-digital-marketing" }
+    {
+      "name": "CTR",
+      "long": "Click-through rate",
+      "formula": "clicks ÷ impressions",
+      "course": "ai-digital-marketing"
+    },
+    {
+      "name": "Conversion rate",
+      "long": "Purchase conversion rate",
+      "formula": "purchases ÷ clicks",
+      "course": "ai-digital-marketing"
+    },
+    {
+      "name": "CPA",
+      "long": "Cost per acquisition",
+      "formula": "spend ÷ purchases",
+      "course": "ai-digital-marketing"
+    },
+    {
+      "name": "ROAS",
+      "long": "Return on ad spend",
+      "formula": "revenue ÷ spend",
+      "course": "ai-digital-marketing"
+    },
+    {
+      "name": "SUS",
+      "long": "System Usability Scale",
+      "formula": "10-item questionnaire, 0–100 (68 = average, 80+ = world class)",
+      "course": "web-analytics"
+    },
+    {
+      "name": "CES",
+      "long": "Customer Effort Score",
+      "formula": "“How easy was it to interact with our product today?” scored 1–7",
+      "course": "web-analytics"
+    },
+    {
+      "name": "TSR",
+      "long": "Task success rate",
+      "formula": "% of users who complete a defined task",
+      "course": "web-analytics"
+    }
   ],
-
   "debates": [
-    { "course": "web-analytics", "section": "01", "q": "If AI already tells you what happened, what will happen and what to do, what are you for?" },
-    { "course": "web-analytics", "section": "02", "q": "Would you trust an AI-generated audit of your website?" },
-    { "course": "web-analytics", "section": "02", "q": "If one post can fool an AI, can you use that in your favour?" },
-    { "course": "web-analytics", "section": "02", "q": "Is that manipulation, or just the new SEO?" },
-    { "course": "web-analytics", "section": "02", "q": "Analysing with AI: yes or no?" },
-    { "course": "web-analytics", "section": "03", "q": "If every company can use the same AI, can AI still be a competitive advantage? How do we stand out?" },
-    { "course": "web-analytics", "section": "03", "q": "Is it fair that two people pay different prices for the same thing?" },
-    { "course": "web-analytics", "section": "03", "q": "Smart growth or dark pattern?" },
-    { "course": "web-analytics", "section": "04", "q": "Where does personalisation end and creepy begin?" },
-    { "course": "web-analytics", "section": "05", "q": "Can we build an AI model that isn't biased?" },
-    { "course": "web-analytics", "section": "05", "q": "Do you love it, or are we heading for disaster?" },
-    { "course": "digital-marketing-tools", "section": "Ethics", "q": "Would the customer expect it? Could I explain it openly? Does it benefit them too?" }
+    {
+      "course": "web-analytics",
+      "section": "01",
+      "q": "If AI already tells you what happened, what will happen and what to do, what are you for?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "02",
+      "q": "Would you trust an AI-generated audit of your website?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "02",
+      "q": "If one post can fool an AI, can you use that in your favour?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "02",
+      "q": "Is that manipulation, or just the new SEO?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "02",
+      "q": "Analysing with AI: yes or no?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "03",
+      "q": "If every company can use the same AI, can AI still be a competitive advantage? How do we stand out?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "03",
+      "q": "Is it fair that two people pay different prices for the same thing?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "03",
+      "q": "Smart growth or dark pattern?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "04",
+      "q": "Where does personalisation end and creepy begin?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "05",
+      "q": "Can we build an AI model that isn't biased?"
+    },
+    {
+      "course": "web-analytics",
+      "section": "05",
+      "q": "Do you love it, or are we heading for disaster?"
+    },
+    {
+      "course": "digital-marketing-tools",
+      "section": "Ethics",
+      "q": "Would the customer expect it? Could I explain it openly? Does it benefit them too?"
+    }
   ]
 }

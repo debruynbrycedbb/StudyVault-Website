@@ -110,6 +110,12 @@
   SV.course = (id) => SV.courses().find((c) => c.id === id);
   SV.courseColor = (id) => { const c = SV.vault.courses.find((x) => x.id === id); return c ? c.color : 'var(--muted)'; };
   SV.courseName = (id) => { if (id === 'all') return 'All module courses'; const c = SV.vault.courses.find((x) => x.id === id); return c ? c.name : 'General'; };
+  /** "Week 3", or a section label such as "RD1" for courses not organised by week (e.g. the thesis). */
+  SV.weekLabel = function (courseId, n) {
+    const c = SV.vault.courses.find((x) => x.id === courseId);
+    const w = c && (c.weeks || []).find((x) => x.n === n);
+    return w && w.label ? w.label : 'Week ' + n;
+  };
   SV.courseShort = (id) => { if (id === 'all') return 'ALL'; const c = SV.vault.courses.find((x) => x.id === id); return c ? c.short : '—'; };
 
   SV.notes = function () {

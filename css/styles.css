@@ -688,3 +688,4 @@ legend { font: 600 11px/1 var(--display); font-stretch: 115%; letter-spacing: .2
 .jump { display: block; font: 600 10.5px/1.4 var(--display); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
 .jump:hover { color: var(--accent); }
 :root[data-theme="light"] .chip-code, :root[data-theme="light"] .ctag, :root[data-theme="light"] .ni-code { color: color-mix(in srgb, var(--c) 72%, #000); }
+.file-img, .prose img { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--r); margin: 24px 0; }

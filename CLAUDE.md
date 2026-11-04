@@ -11,6 +11,8 @@ Static site (no build step) for Bryce de Bruyn's Master in Digital Marketing and
 | Downloadable files (PDFs etc.) | `files/<course-id>/week-<NN>-<slug>.pdf` |
 | Practice quiz / flashcard questions | `content/quiz.json` |
 
+Thesis brand: Jackob Buczynski (Polish upcycling fashion, Gràcia boutique) — Group 4. Files in `files/masters-thesis/` are named `rd<N>-…`, `research-…`, `resources-…`.
+
 Course ids: `web-analytics`, `digital-marketing-advertising`, `digital-marketing-tools`, `ai-digital-marketing`, `marketing-ecommerce`, `masters-thesis`, `digital-creativity-social`, `marketing-intelligence`, `ai-social-networks`, `marketing-social-networks`, `social-commerce`.
 
 ## Adding notes from a PDF Bryce sends
@@ -22,6 +24,7 @@ Course ids: `web-analytics`, `digital-marketing-advertising`, `digital-marketing
    - add a `files` entry `{ id, course, week, kind: "Notes"|"Slides"|"Reading", title, path, size }` (size in bytes);
    - add a `notes` entry `{ id, course, week, title, date, path, source: <file id>, tags: [...] }`;
    - in the course's `weeks`, add or update `{ n, title, date, notes: [...], files: [...] }`.
+   - Courses not organised by week (the Master's Thesis) use labelled sections: add `label` (e.g. `"RD1"`, `"Research"`, `"Resources"`) and the site shows the label instead of "Week N", in order. Add new deliverables as new sections (e.g. `{ n: 4, label: "RD2", ... }`).
 5. Optionally add 5–10 questions to `content/quiz.json` (`course`, `note`, `q`, `options`, `answer` index, `explain`) and case studies / tools / resources to `library` that come from the note.
 6. Bump `SV.VERSION` in `js/app.js` so browsers fetch fresh content, validate JSON (`python3 -c "import json;json.load(open('content/vault.json'))"`), commit and push to `main`.
 

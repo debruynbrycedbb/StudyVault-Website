@@ -7,7 +7,7 @@
   function weekBlock(c, w, open) {
     const notes = SV.notes().filter((n) => n.course === c.id && n.week === w.n);
     const files = SV.files().filter((f) => f.course === c.id && f.week === w.n && f.scope !== 'extra');
-    const label = 'Week ' + String(w.n).padStart(2, '0');
+    const label = w.label || 'Week ' + String(w.n).padStart(2, '0');
     return '<details class="week" id="week-' + w.n + '"' + (open ? ' open' : '') + '>' +
       '<summary><span class="wk-num">' + label + '</span>' +
         '<span class="wk-title">' + (w.title ? esc(w.title) : '<span class="muted">Untitled week</span>') + '</span>' +
@@ -80,7 +80,8 @@
     if (!c) { view.innerHTML = '<div class="notfound"><h1 class="display sm">Course not found</h1><p><a href="#/">Back to home</a></p></div>'; return; }
     SV.addRecent({ type: 'Course', title: c.name, href: '#/course/' + c.id, course: c.id });
     const tab = params.get('tab') || 'weeks';
-    const openWeek = +params.get('week') || (c.weeks.length ? c.weeks[c.weeks.length - 1].n : 0);
+    const sectioned = c.weeks.some((w) => w.label);
+    const openWeek = +params.get('week') || (c.weeks.length ? (sectioned ? c.weeks[0].n : c.weeks[c.weeks.length - 1].n) : 0);
     const dls = SV.deadlines().filter((d) => d.course === c.id || (d.course === 'all' && c.status === 'current' && c.id !== 'masters-thesis'));
     const up = dls.filter((d) => !d.done && SV.endOfDeadline(d) >= new Date());
     const nextN = c.weeks.length ? Math.max.apply(null, c.weeks.map((w) => w.n)) + 1 : 1;
@@ -96,14 +97,14 @@
       '</header>' +
       (c.assessment ? '<aside class="callout"><h3>Assessment and rules</h3><p>' + esc(c.assessment) + '</p></aside>' : '') +
       '<nav class="tabs" aria-label="Course sections">' +
-        '<a class="tab' + (tab === 'weeks' ? ' on' : '') + '" href="#/course/' + c.id + '">Weeks <span class="count">' + c.weeks.length + '</span></a>' +
+        '<a class="tab' + (tab === 'weeks' ? ' on' : '') + '" href="#/course/' + c.id + '">' + (c.weeks.some((w) => w.label) ? 'Sections' : 'Weeks') + ' <span class="count">' + c.weeks.length + '</span></a>' +
         '<a class="tab' + (tab === 'deadlines' ? ' on' : '') + '" href="#/course/' + c.id + '?tab=deadlines">Deadlines <span class="count">' + dls.length + '</span></a>' +
         '<a class="tab' + (tab === 'extras' ? ' on' : '') + '" href="#/course/' + c.id + '?tab=extras">Additional content</a>' +
       '</nav>' +
       '<div class="tab-body">' +
       (tab === 'weeks'
-        ? (c.weeks.length ? c.weeks.slice().reverse().map((w) => weekBlock(c, w, w.n === openWeek)).join('') : '<div class="empty-state">' + SV.icon('layers') + '<h3>No weeks yet</h3><p>Add Week 1 to start storing notes and files for ' + esc(c.name) + '. You can also send the PDFs to Claude and they’ll be added here for you.</p></div>') +
-          '<button type="button" class="add-week" id="addWeek">' + SV.icon('plus') + 'Add week ' + String(nextN).padStart(2, '0') + '</button>'
+        ? (c.weeks.length ? (sectioned ? c.weeks.slice() : c.weeks.slice().reverse()).map((w) => weekBlock(c, w, w.n === openWeek)).join('') : '<div class="empty-state">' + SV.icon('layers') + '<h3>No weeks yet</h3><p>Add Week 1 to start storing notes and files for ' + esc(c.name) + '. You can also send the PDFs to Claude and they’ll be added here for you.</p></div>') +
+          (sectioned ? '' : '<button type="button" class="add-week" id="addWeek">' + SV.icon('plus') + 'Add week ' + String(nextN).padStart(2, '0') + '</button>')
         : tab === 'deadlines'
           ? '<div class="tab-tools"><button type="button" class="btn btn-ghost sm" id="addCourseDl">' + SV.icon('plus') + 'Add a deadline for ' + esc(c.short) + '</button></div>' +
             (dls.length ? '<ul class="dl-list">' + dls.map((d) => SV.deadlineRow(d, { hideCourse: d.course === c.id })).join('') + '</ul>' : '<p class="empty">No deadlines for this course yet.</p>')
@@ -171,7 +172,7 @@
     view.innerHTML =
       '<article class="reader" style="--c:' + c.color + '">' +
         '<header class="reader-head">' +
-          '<p class="crumb"><a href="#/course/' + c.id + '">' + esc(c.name) + '</a> / <a href="#/course/' + c.id + '?week=' + n.week + '">Week ' + n.week + '</a></p>' +
+          '<p class="crumb"><a href="#/course/' + c.id + '">' + esc(c.name) + '</a> / <a href="#/course/' + c.id + '?week=' + n.week + '">' + esc(SV.weekLabel(n.course, n.week)) + '</a></p>' +
           '<h1 class="reader-title">' + esc(n.title) + '</h1>' +
           '<p class="meta-line">' + [n.date ? SV.fmt(n.date, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) : '', Math.max(1, Math.round(words / 230)) + ' min read', n.local ? 'Saved in this browser' : ''].filter(Boolean).map(esc).join('<span class="sep"></span>') + '</p>' +
           '<div class="reader-actions">' +
@@ -184,7 +185,7 @@
         '</header>' +
         '<div class="reader-grid">' +
           '<nav class="toc" aria-label="On this page"><h2>On this page</h2><ol id="toc"></ol>' +
-            (sameWeek.length ? '<h2>Also in week ' + n.week + '</h2><ul class="file-list mini">' + sameWeek.map(SV.fileRow).join('') + '</ul>' : '') +
+            (sameWeek.length ? '<h2>Also in ' + esc(SV.weekLabel(n.course, n.week)) + '</h2><ul class="file-list mini">' + sameWeek.map(SV.fileRow).join('') + '</ul>' : '') +
           '</nav>' +
           '<div class="prose" id="prose">' + SV.md(n.body) + '</div>' +
         '</div>' +
@@ -227,10 +228,11 @@
   SV.views.file = function (view, params, id) {
     const f = SV.file(id);
     if (!f) { view.innerHTML = '<div class="notfound"><h1 class="display sm">File not found</h1></div>'; return; }
-    view.innerHTML = '<div class="file-page"><p class="crumb">' + (f.course ? '<a href="#/course/' + f.course + (f.week ? '?week=' + f.week : '') + '">' + esc(SV.courseName(f.course)) + (f.week ? ' / Week ' + f.week : '') + '</a>' : 'General') + '</p>' +
+    view.innerHTML = '<div class="file-page"><p class="crumb">' + (f.course ? '<a href="#/course/' + f.course + (f.week ? '?week=' + f.week : '') + '">' + esc(SV.courseName(f.course)) + (f.week ? ' / ' + esc(SV.weekLabel(f.course, f.week)) : '') + '</a>' : 'General') + '</p>' +
       '<h1 class="display sm">' + esc(f.title) + '</h1><p class="meta-line">' + esc(f.kind || '') + ' · ' + SV.size(f.size) + '</p>' +
       '<div class="reader-actions"><button type="button" class="btn btn-primary" data-open-file="' + f.id + '">' + SV.icon('external') + 'Open</button><button type="button" class="btn btn-ghost" data-download-file="' + f.id + '">' + SV.icon('download') + 'Download</button></div>' +
-      (!f.local && /\.pdf$/i.test(f.path) ? '<iframe class="pdf-frame" src="' + esc(f.path) + '" title="' + esc(f.title) + '"></iframe>' : '') + '</div>';
+      (!f.local && /\.pdf$/i.test(f.path) ? '<iframe class="pdf-frame" src="' + esc(f.path) + '" title="' + esc(f.title) + '"></iframe>' : '') +
+      (!f.local && /\.(jpe?g|png|webp|gif)$/i.test(f.path) ? '<img class="file-img" src="' + esc(f.path) + '" alt="' + esc(f.title) + '">' : '') + '</div>';
     SV.bindFileButtons(view);
     SV.addRecent({ type: 'File', title: f.title, href: '#/file/' + f.id, course: f.course });
   };

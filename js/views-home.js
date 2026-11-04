@@ -129,7 +129,7 @@
       return '<a class="course-card" href="#/course/' + c.id + '" style="--c:' + c.color + '">' +
         '<h3><span class="dot"></span>' + esc(c.name) + '</h3>' +
         '<p class="cc-sub">' + esc([c.period, c.lecturer].filter(Boolean).join(' · ')) + '</p>' +
-        '<p class="cc-stats">' + (c.weeks.length ? c.weeks.length + (c.weeks.length === 1 ? ' week' : ' weeks') + ' · ' + nNotes + (nNotes === 1 ? ' note' : ' notes') + ' · ' + nFiles + (nFiles === 1 ? ' file' : ' files') : 'No notes yet') + '</p>' +
+        '<p class="cc-stats">' + (c.weeks.length ? c.weeks.length + (c.weeks.some((w) => w.label) ? (c.weeks.length === 1 ? ' section' : ' sections') : (c.weeks.length === 1 ? ' week' : ' weeks')) + ' · ' + nNotes + (nNotes === 1 ? ' note' : ' notes') + ' · ' + nFiles + (nFiles === 1 ? ' file' : ' files') : 'No notes yet') + '</p>' +
         '<p class="cc-next">' + (nd ? '<span class="tag t-' + SV.slug(SV.typeLabel(nd.type)) + '">' + esc(nd.type) + '</span>' + esc(SV.relDays(nd.date)) + ' · ' + esc(SV.fmt(nd.date, { day: 'numeric', month: 'short' })) : '<span class="muted">No upcoming deadlines</span>') + '</p></a>';
     };
 
@@ -137,7 +137,7 @@
       const words = (n.body || '').split(/\s+/).length;
       return '<li><a class="note-item" href="#/note/' + n.id + '" style="--c:' + SV.courseColor(n.course) + '">' +
         '<span class="ni-code">' + esc(SV.courseShort(n.course)) + '</span>' +
-        '<span class="ni-text"><span class="ni-title">' + esc(n.title) + '</span><span class="ni-sub">Week ' + n.week + (n.date ? ' · ' + SV.fmt(n.date, { day: 'numeric', month: 'short' }) : '') + ' · ' + Math.max(1, Math.round(words / 230)) + ' min read</span></span></a></li>';
+        '<span class="ni-text"><span class="ni-title">' + esc(n.title) + '</span><span class="ni-sub">' + esc(SV.weekLabel(n.course, n.week)) + (n.date ? ' · ' + SV.fmt(n.date, { day: 'numeric', month: 'short' }) : '') + ' · ' + Math.max(1, Math.round(words / 230)) + ' min read</span></span></a></li>';
     };
     const sortedNotes = notes.slice().sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
@@ -159,7 +159,7 @@
           (up.length ? '<ul class="dl-list">' + up.slice(0, 5).map((d) => SV.deadlineRow(d)).join('') + '</ul>' : '<p class="empty">Nothing due. Add a deadline to see it here.</p>') +
         '</section>' +
         '<section aria-labelledby="notesH"><div class="sec-head"><h2 id="notesH">' + (last ? 'Pick up where you left off' : 'Latest notes') + '</h2></div>' +
-          (last ? '<a class="resume" href="#/note/' + last.id + '" style="--c:' + SV.courseColor(last.course) + '"><span class="r-k">' + esc(SV.courseName(last.course)) + ' · Week ' + last.week + '</span><span class="r-t">' + esc(last.title) + '</span></a>' : '') +
+          (last ? '<a class="resume" href="#/note/' + last.id + '" style="--c:' + SV.courseColor(last.course) + '"><span class="r-k">' + esc(SV.courseName(last.course)) + ' · ' + esc(SV.weekLabel(last.course, last.week)) + '</span><span class="r-t">' + esc(last.title) + '</span></a>' : '') +
           '<ul class="note-list">' + sortedNotes.filter((n) => !last || n.id !== last.id).slice(0, 5).map(noteItem).join('') + '</ul>' +
         '</section>' +
       '</div>' +

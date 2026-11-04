@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   const SV = window.SV;
-  SV.VERSION = '1.0.0';
+  SV.VERSION = '1.1.0';
 
   const TITLES = { home: 'Home', calendar: 'Calendar', library: 'Research library', tools: 'Study tools', settings: 'Settings', search: 'Search' };
 

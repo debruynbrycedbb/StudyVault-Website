@@ -1,36 +1,704 @@
 [
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "What are the five parts of a prompt written as a working brief?", "options": ["Outcome, audience and situation, material, limits, format", "Role, tone, length, keywords, examples", "Goal, budget, channel, KPI, deadline", "Context, tokens, attention, model, tools"], "answer": 0, "explain": "Write a prompt the way you'd brief a new colleague: outcome, audience and situation, material to use, limits to respect, form of a useful result." },
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "Uploading a LOOP product sheet to an assistant…", "options": ["Retrains the model on LOOP", "Gives the model working information for this task only", "Permanently changes the model's knowledge", "Has no effect on the output"], "answer": 1, "explain": "Context supplies working information; model training is a separate process. Students often confuse the two." },
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "An AI draft says “LOOP keeps drinks cold for 24 hours”, but the product sheet says nothing about insulation. What should the assistant do?", "options": ["Keep the claim — it's typical for steel bottles", "Remove the bottle size too, to be safe", "Flag it as unsupported, ask for test data, and use only known facts", "Replace it with “keeps drinks cold all day”"], "answer": 2, "explain": "It should flag the claim, ask for test data and propose wording limited to known facts (750 ml, steel) — not quietly keep it." },
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "Which is an example of predictive (not generative) AI?", "options": ["A first draft of an ad", "An AI-generated bottle image", "Estimating the likelihood of purchase", "Writing a landing page"], "answer": 2, "explain": "Predictive estimates an outcome; generative creates an output. Real workflows often mix both." },
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "Search spent €600 and drove 60 purchases. What is the CPA?", "options": ["€6.00", "€10.00", "€29.00", "€0.10"], "answer": 1, "explain": "CPA = spend ÷ purchases = €600 ÷ 60 = €10.00." },
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "In the LOOP pilot, why does ROAS rank channels exactly as CPA does?", "options": ["Because spend was equal per channel", "Because every purchase is exactly one €29 bottle", "Because retargeting has the most impressions", "Because the attribution windows differ"], "answer": 1, "explain": "With constant order value, revenue is just purchases × €29, so revenue doesn't change the channel story." },
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "Why might retargeting's strong ROAS (4.35) be misleading?", "options": ["It reaches mostly people already interested, so attribution flatters it", "It has the highest CPA", "Its data is real while the rest is synthetic", "It ignores the attribution window"], "answer": 0, "explain": "Retargeting reaches people already interested and depends on prospecting to fill its audience." },
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "Noy & Zhang (Science, 2023) found that with ChatGPT on writing tasks…", "options": ["Time rose 40%, quality fell 18%", "Time fell ~40%, graded quality rose ~18%", "No measurable difference", "Quality doubled for every task"], "answer": 1, "explain": "453 professionals; time fell about 40% and graded quality rose about 18%. Limits: specific tasks, an older model, graders didn't fact-check." },
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "Why can't LOOP claim to be “the most sustainable bottle in Europe”?", "options": ["Because it's made of steel", "EU Directive 2024/825 (EmpCo) bars generic environmental claims without recognised evidence", "Because LOOP only sells in Barcelona", "Because the GDPR forbids it"], "answer": 1, "explain": "Since 27 September 2026, EmpCo bars generic environmental claims unless recognised excellent environmental performance can be shown." },
-  { "course": "ai-digital-marketing", "note": "aidm-w1-session-notes", "q": "A weekly AI campaign report needs four things. Which is NOT one of them?", "options": ["Schedule and data source", "Comparison period", "Threshold for a meaningful change", "A fully automated publish step"], "answer": 3, "explain": "The four: schedule and data source, comparison period, a threshold (e.g. CPA moves >20%), and a named reviewer." },
-
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "Which analytics level answers “What should we do?”", "options": ["Descriptive", "Predictive", "Prescriptive", "Diagnostic"], "answer": 2, "explain": "Descriptive: what happened. Predictive: what will happen. Prescriptive: the system recommends the action." },
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "In the Euromon PLV audit, what was the AI's only source?", "options": ["The live website", "A Google Search Console export", "The professor's own deleted Reddit post from July 2024", "A competitor analysis"], "answer": 2, "explain": "It repeated what it had read rather than diagnosing anything — the site was no longer on Wix." },
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "Given a two-week Search Console export instead of screenshots, what did the AI conclude?", "options": ["A Google anti-spam update hit the whole site", "3 pages account for 97% of the loss; the rest is stable", "Daily posting should be paused", "Clicks fell from 8 to 0"], "answer": 1, "explain": "Same AI, same question, opposite answer depending on input. Clicks actually went from 7 to 8." },
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "What does GEO stand for?", "options": ["Geographic engagement optimisation", "Generative engine optimisation", "Global e-commerce operations", "Growth experiment orchestration"], "answer": 1, "explain": "Publishing content so generative engines (like ChatGPT) surface your brand — e.g. Euromon PLV listed first by Oct 2026." },
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "Higgsfield's banners claimed 55% and 62% off. What did Plus actually get?", "options": ["55% and 62%", "40% and 46%", "20% and 25%", "No discount at all"], "answer": 1, "explain": "Inflated percentages, countdown timers, “personal” framing and exit-intent offers were the tactics on show." },
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "Roughly what share of Netflix viewing comes from recommendations (Gomez-Uribe & Hunt, 2015)?", "options": ["20%", "50%", "80%", "95%"], "answer": 2, "explain": "About 80% — an example of technology as a strategic asset rather than a support function." },
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "Why was Amazon's CV-scoring AI scrapped in 2017?", "options": ["It was too expensive", "Amazon couldn't guarantee it wouldn't discriminate in other ways", "Regulators banned it", "It rated every CV 5 stars"], "answer": 1, "explain": "Trained on mostly male CVs, it marked down CVs containing “women's”." },
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "Which guardrail responds to the black-box problem?", "options": ["Regular audits", "Privacy by design", "A human in the loop", "Diverse data"], "answer": 2, "explain": "Bias → audits and diverse data. Privacy → privacy by design. Transparency → a human in the loop." },
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "How is Web Analytics assessed?", "options": ["Exam 100%", "Final quiz 30%, coursework 70%", "Coursework 50%, participation 50%", "Final quiz 70%, coursework 30%"], "answer": 1, "explain": "Coursework is graded by TFM tutors, partly on fit with your TFM case and strategy." },
-  { "course": "web-analytics", "note": "wa-w1-session-notes", "q": "In the AI agent trading desks, what is the sceptic agent for?", "options": ["Executing trades faster", "Explaining why the other agents might be wrong", "Approving every trade instead of a human", "Gathering market data"], "answer": 1, "explain": "Without it, the agents just agree with each other." },
-
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "What are the four pillars of a CRM?", "options": ["Strategy, data, processes, people", "Sales, marketing, service, IT", "Target, trigger, content, channel", "Acquire, convert, grow, retain"], "answer": 0, "explain": "Technology + AI is the enabler that centralises, automates and anticipates — not the goal." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "In the CRM methodology, what starts a process?", "options": ["The target", "The trigger", "The content", "The channel"], "answer": 1, "explain": "Every process has four elements: target, trigger, content, channel. The trigger is the action or event that starts it." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "“You're running out of dog food: shall we send some?” is an example of which experience approach?", "options": ["Reactive", "Proactive", "Predictive", "Collaborative"], "answer": 2, "explain": "Predictive: AI anticipates needs not yet expressed. Proactive gets ahead of a known problem." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "Which AI use fits the Retention stage of the lifecycle?", "options": ["Predictive lead scoring", "Next best offer", "Churn prediction", "Conversational agents"], "answer": 2, "explain": "Acquisition: lead scoring · Conversion: conversational agents · Growth: next best offer · Retention: churn prediction · Reactivation: smart campaigns." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "Which system answers “Who is this person across all our systems?”", "options": ["CRM", "ERP", "CDP", "MAP"], "answer": 2, "explain": "A CDP unifies data from several systems into a single profile." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "Which AI layer belongs to HubSpot?", "options": ["Agentforce", "Breeze", "Copilot", "Zia"], "answer": 1, "explain": "Salesforce → Agentforce · HubSpot → Breeze · Dynamics 365 → Copilot · Zoho → Zia." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "Under the EU AI Act, what applies from August 2026?", "options": ["Prohibited practices", "Transparency: tell people they're talking to an AI and label generated content", "High-risk systems such as credit scoring", "Nothing new"], "answer": 1, "explain": "Feb 2025: AI literacy and prohibited practices · Aug 2026: transparency · Dec 2027: high-risk (postponed by the Digital Omnibus)." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "GDPR Article 22 gives people the right…", "options": ["To have their data deleted", "Not to be subject to solely automated decisions", "To receive marketing emails", "To access the source code"], "answer": 1, "explain": "Relevant whenever a CRM automates decisions about customers." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "In the abandoned-cart example, what's the content rule the first time?", "options": ["Always a 10% discount", "Products and size in stock, no discount", "Free shipping", "A generic newsletter"], "answer": 1, "explain": "AI adds value by predicting who'll buy without an incentive, so no margin is given away." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-pre-reading", "q": "A DMP mainly relies on…", "options": ["First-party data in a unified hub", "Anonymous third-party data, usually expiring after ~90 days", "Manually entered sales notes", "ERP stock data"], "answer": 1, "explain": "DMPs build audience segments for ads; the phase-out of third-party cookies is a challenge for them." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-pre-reading", "q": "Which is listed as a common pitfall with AI-powered CDPs?", "options": ["Starting with send-time optimisation", "Scoring before resolving identities", "Closing the feedback loop", "Enforcing consent at the profile layer"], "answer": 1, "explain": "Training models on fragmented data leads to compounding errors. Other pitfalls: treating a prediction as a strategy, starting too big." },
-  { "course": "digital-marketing-tools", "note": "dmt-w1-crm-summary", "q": "Which is NOT one of the three ethics questions before you automate?", "options": ["Would the customer expect it?", "Could I explain it openly?", "Does it benefit them too?", "Is it cheaper than a person?"], "answer": 3, "explain": "Trust is a CRM's most valuable asset." }
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "What are the five parts of a prompt written as a working brief?",
+    "options": [
+      "Outcome, audience and situation, material, limits, format",
+      "Role, tone, length, keywords, examples",
+      "Goal, budget, channel, KPI, deadline",
+      "Context, tokens, attention, model, tools"
+    ],
+    "answer": 0,
+    "explain": "Write a prompt the way you'd brief a new colleague: outcome, audience and situation, material to use, limits to respect, form of a useful result."
+  },
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "Uploading a LOOP product sheet to an assistant…",
+    "options": [
+      "Retrains the model on LOOP",
+      "Gives the model working information for this task only",
+      "Permanently changes the model's knowledge",
+      "Has no effect on the output"
+    ],
+    "answer": 1,
+    "explain": "Context supplies working information; model training is a separate process. Students often confuse the two."
+  },
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "An AI draft says “LOOP keeps drinks cold for 24 hours”, but the product sheet says nothing about insulation. What should the assistant do?",
+    "options": [
+      "Keep the claim — it's typical for steel bottles",
+      "Remove the bottle size too, to be safe",
+      "Flag it as unsupported, ask for test data, and use only known facts",
+      "Replace it with “keeps drinks cold all day”"
+    ],
+    "answer": 2,
+    "explain": "It should flag the claim, ask for test data and propose wording limited to known facts (750 ml, steel) — not quietly keep it."
+  },
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "Which is an example of predictive (not generative) AI?",
+    "options": [
+      "A first draft of an ad",
+      "An AI-generated bottle image",
+      "Estimating the likelihood of purchase",
+      "Writing a landing page"
+    ],
+    "answer": 2,
+    "explain": "Predictive estimates an outcome; generative creates an output. Real workflows often mix both."
+  },
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "Search spent €600 and drove 60 purchases. What is the CPA?",
+    "options": [
+      "€6.00",
+      "€10.00",
+      "€29.00",
+      "€0.10"
+    ],
+    "answer": 1,
+    "explain": "CPA = spend ÷ purchases = €600 ÷ 60 = €10.00."
+  },
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "In the LOOP pilot, why does ROAS rank channels exactly as CPA does?",
+    "options": [
+      "Because spend was equal per channel",
+      "Because every purchase is exactly one €29 bottle",
+      "Because retargeting has the most impressions",
+      "Because the attribution windows differ"
+    ],
+    "answer": 1,
+    "explain": "With constant order value, revenue is just purchases × €29, so revenue doesn't change the channel story."
+  },
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "Why might retargeting's strong ROAS (4.35) be misleading?",
+    "options": [
+      "It reaches mostly people already interested, so attribution flatters it",
+      "It has the highest CPA",
+      "Its data is real while the rest is synthetic",
+      "It ignores the attribution window"
+    ],
+    "answer": 0,
+    "explain": "Retargeting reaches people already interested and depends on prospecting to fill its audience."
+  },
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "Noy & Zhang (Science, 2023) found that with ChatGPT on writing tasks…",
+    "options": [
+      "Time rose 40%, quality fell 18%",
+      "Time fell ~40%, graded quality rose ~18%",
+      "No measurable difference",
+      "Quality doubled for every task"
+    ],
+    "answer": 1,
+    "explain": "453 professionals; time fell about 40% and graded quality rose about 18%. Limits: specific tasks, an older model, graders didn't fact-check."
+  },
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "Why can't LOOP claim to be “the most sustainable bottle in Europe”?",
+    "options": [
+      "Because it's made of steel",
+      "EU Directive 2024/825 (EmpCo) bars generic environmental claims without recognised evidence",
+      "Because LOOP only sells in Barcelona",
+      "Because the GDPR forbids it"
+    ],
+    "answer": 1,
+    "explain": "Since 27 September 2026, EmpCo bars generic environmental claims unless recognised excellent environmental performance can be shown."
+  },
+  {
+    "course": "ai-digital-marketing",
+    "note": "aidm-w1-session-notes",
+    "q": "A weekly AI campaign report needs four things. Which is NOT one of them?",
+    "options": [
+      "Schedule and data source",
+      "Comparison period",
+      "Threshold for a meaningful change",
+      "A fully automated publish step"
+    ],
+    "answer": 3,
+    "explain": "The four: schedule and data source, comparison period, a threshold (e.g. CPA moves >20%), and a named reviewer."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "Which analytics level answers “What should we do?”",
+    "options": [
+      "Descriptive",
+      "Predictive",
+      "Prescriptive",
+      "Diagnostic"
+    ],
+    "answer": 2,
+    "explain": "Descriptive: what happened. Predictive: what will happen. Prescriptive: the system recommends the action."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "In the Euromon PLV audit, what was the AI's only source?",
+    "options": [
+      "The live website",
+      "A Google Search Console export",
+      "The professor's own deleted Reddit post from July 2024",
+      "A competitor analysis"
+    ],
+    "answer": 2,
+    "explain": "It repeated what it had read rather than diagnosing anything — the site was no longer on Wix."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "Given a two-week Search Console export instead of screenshots, what did the AI conclude?",
+    "options": [
+      "A Google anti-spam update hit the whole site",
+      "3 pages account for 97% of the loss; the rest is stable",
+      "Daily posting should be paused",
+      "Clicks fell from 8 to 0"
+    ],
+    "answer": 1,
+    "explain": "Same AI, same question, opposite answer depending on input. Clicks actually went from 7 to 8."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "What does GEO stand for?",
+    "options": [
+      "Geographic engagement optimisation",
+      "Generative engine optimisation",
+      "Global e-commerce operations",
+      "Growth experiment orchestration"
+    ],
+    "answer": 1,
+    "explain": "Publishing content so generative engines (like ChatGPT) surface your brand — e.g. Euromon PLV listed first by Oct 2026."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "Higgsfield's banners claimed 55% and 62% off. What did Plus actually get?",
+    "options": [
+      "55% and 62%",
+      "40% and 46%",
+      "20% and 25%",
+      "No discount at all"
+    ],
+    "answer": 1,
+    "explain": "Inflated percentages, countdown timers, “personal” framing and exit-intent offers were the tactics on show."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "Roughly what share of Netflix viewing comes from recommendations (Gomez-Uribe & Hunt, 2015)?",
+    "options": [
+      "20%",
+      "50%",
+      "80%",
+      "95%"
+    ],
+    "answer": 2,
+    "explain": "About 80% — an example of technology as a strategic asset rather than a support function."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "Why was Amazon's CV-scoring AI scrapped in 2017?",
+    "options": [
+      "It was too expensive",
+      "Amazon couldn't guarantee it wouldn't discriminate in other ways",
+      "Regulators banned it",
+      "It rated every CV 5 stars"
+    ],
+    "answer": 1,
+    "explain": "Trained on mostly male CVs, it marked down CVs containing “women's”."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "Which guardrail responds to the black-box problem?",
+    "options": [
+      "Regular audits",
+      "Privacy by design",
+      "A human in the loop",
+      "Diverse data"
+    ],
+    "answer": 2,
+    "explain": "Bias → audits and diverse data. Privacy → privacy by design. Transparency → a human in the loop."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "How is Web Analytics assessed?",
+    "options": [
+      "Exam 100%",
+      "Final quiz 30%, coursework 70%",
+      "Coursework 50%, participation 50%",
+      "Final quiz 70%, coursework 30%"
+    ],
+    "answer": 1,
+    "explain": "Coursework is graded by TFM tutors, partly on fit with your TFM case and strategy."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "In the AI agent trading desks, what is the sceptic agent for?",
+    "options": [
+      "Executing trades faster",
+      "Explaining why the other agents might be wrong",
+      "Approving every trade instead of a human",
+      "Gathering market data"
+    ],
+    "answer": 1,
+    "explain": "Without it, the agents just agree with each other."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "What are the four pillars of a CRM?",
+    "options": [
+      "Strategy, data, processes, people",
+      "Sales, marketing, service, IT",
+      "Target, trigger, content, channel",
+      "Acquire, convert, grow, retain"
+    ],
+    "answer": 0,
+    "explain": "Technology + AI is the enabler that centralises, automates and anticipates — not the goal."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "In the CRM methodology, what starts a process?",
+    "options": [
+      "The target",
+      "The trigger",
+      "The content",
+      "The channel"
+    ],
+    "answer": 1,
+    "explain": "Every process has four elements: target, trigger, content, channel. The trigger is the action or event that starts it."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "“You're running out of dog food: shall we send some?” is an example of which experience approach?",
+    "options": [
+      "Reactive",
+      "Proactive",
+      "Predictive",
+      "Collaborative"
+    ],
+    "answer": 2,
+    "explain": "Predictive: AI anticipates needs not yet expressed. Proactive gets ahead of a known problem."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "Which AI use fits the Retention stage of the lifecycle?",
+    "options": [
+      "Predictive lead scoring",
+      "Next best offer",
+      "Churn prediction",
+      "Conversational agents"
+    ],
+    "answer": 2,
+    "explain": "Acquisition: lead scoring · Conversion: conversational agents · Growth: next best offer · Retention: churn prediction · Reactivation: smart campaigns."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "Which system answers “Who is this person across all our systems?”",
+    "options": [
+      "CRM",
+      "ERP",
+      "CDP",
+      "MAP"
+    ],
+    "answer": 2,
+    "explain": "A CDP unifies data from several systems into a single profile."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "Which AI layer belongs to HubSpot?",
+    "options": [
+      "Agentforce",
+      "Breeze",
+      "Copilot",
+      "Zia"
+    ],
+    "answer": 1,
+    "explain": "Salesforce → Agentforce · HubSpot → Breeze · Dynamics 365 → Copilot · Zoho → Zia."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "Under the EU AI Act, what applies from August 2026?",
+    "options": [
+      "Prohibited practices",
+      "Transparency: tell people they're talking to an AI and label generated content",
+      "High-risk systems such as credit scoring",
+      "Nothing new"
+    ],
+    "answer": 1,
+    "explain": "Feb 2025: AI literacy and prohibited practices · Aug 2026: transparency · Dec 2027: high-risk (postponed by the Digital Omnibus)."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "GDPR Article 22 gives people the right…",
+    "options": [
+      "To have their data deleted",
+      "Not to be subject to solely automated decisions",
+      "To receive marketing emails",
+      "To access the source code"
+    ],
+    "answer": 1,
+    "explain": "Relevant whenever a CRM automates decisions about customers."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "In the abandoned-cart example, what's the content rule the first time?",
+    "options": [
+      "Always a 10% discount",
+      "Products and size in stock, no discount",
+      "Free shipping",
+      "A generic newsletter"
+    ],
+    "answer": 1,
+    "explain": "AI adds value by predicting who'll buy without an incentive, so no margin is given away."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-pre-reading",
+    "q": "A DMP mainly relies on…",
+    "options": [
+      "First-party data in a unified hub",
+      "Anonymous third-party data, usually expiring after ~90 days",
+      "Manually entered sales notes",
+      "ERP stock data"
+    ],
+    "answer": 1,
+    "explain": "DMPs build audience segments for ads; the phase-out of third-party cookies is a challenge for them."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-pre-reading",
+    "q": "Which is listed as a common pitfall with AI-powered CDPs?",
+    "options": [
+      "Starting with send-time optimisation",
+      "Scoring before resolving identities",
+      "Closing the feedback loop",
+      "Enforcing consent at the profile layer"
+    ],
+    "answer": 1,
+    "explain": "Training models on fragmented data leads to compounding errors. Other pitfalls: treating a prediction as a strategy, starting too big."
+  },
+  {
+    "course": "digital-marketing-tools",
+    "note": "dmt-w1-crm-summary",
+    "q": "Which is NOT one of the three ethics questions before you automate?",
+    "options": [
+      "Would the customer expect it?",
+      "Could I explain it openly?",
+      "Does it benefit them too?",
+      "Is it cheaper than a person?"
+    ],
+    "answer": 3,
+    "explain": "Trust is a CRM's most valuable asset."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w2-pre-reading",
+    "q": "Which of these is NOT one of the 7Ds of digital marketing?",
+    "options": [
+      "Digital audiences",
+      "Digital devices",
+      "Digital distribution",
+      "Digital data"
+    ],
+    "answer": 2,
+    "explain": "The 7Ds: goals, audiences, devices, platforms, media, data and technology."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w2-pre-reading",
+    "q": "In Smart Insights’ RACE system, what happens in the “Action” stage?",
+    "options": [
+      "Audit current digital maturity",
+      "Select priority digital initiatives",
+      "Build a tactical roadmap, often as agile 90-day plans",
+      "Set baseline objectives"
+    ],
+    "answer": 2,
+    "explain": "Opportunity = situation review · Strategy = choose initiatives · Action = execution roadmap."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w2-pre-reading",
+    "q": "BCG’s rule “Place big bets” means…",
+    "options": [
+      "Spread budget across as many pilots as possible",
+      "Focus on two or three high-value use cases, short-term wins first",
+      "Acquire a digital competitor",
+      "Bet on the newest platform"
+    ],
+    "answer": 1,
+    "explain": "The five rules: assess impact, set high ambitions, place big bets, build new muscles, manage transformation actively."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w2-pre-reading",
+    "q": "In a SWOT, “outdated tech” belongs in…",
+    "options": [
+      "Strengths",
+      "Weaknesses",
+      "Opportunities",
+      "Threats"
+    ],
+    "answer": 1,
+    "explain": "Weaknesses are internal factors that detract from your competitive edge."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w2-pre-reading",
+    "q": "According to the reading, where does the real value of a SWOT lie?",
+    "options": [
+      "Filling all four boxes",
+      "Prioritising the top 3–5 items per category and turning them into actions",
+      "Presenting it to management",
+      "Repeating it every quarter"
+    ],
+    "answer": 1,
+    "explain": "Step 6: prioritise and take action."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w2-pre-reading",
+    "q": "HelloFresh meal kits vs a food delivery app is an example of which competitor type?",
+    "options": [
+      "Direct",
+      "Indirect",
+      "Aspirational",
+      "Substitute brand"
+    ],
+    "answer": 1,
+    "explain": "Indirect: different offering, same core customer need."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w2-pre-reading",
+    "q": "How does PEST differ from SWOT?",
+    "options": [
+      "PEST covers only internal factors",
+      "PEST looks only at the external macro-environment",
+      "PEST is used only for individuals",
+      "There is no difference"
+    ],
+    "answer": 1,
+    "explain": "PEST is often the main input for SWOT’s Opportunities and Threats."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-pre-reading",
+    "q": "Which is NOT one of the 3 core pillars of SEO in the reading?",
+    "options": [
+      "Technical eligibility (indexation)",
+      "Keyword and prompt research",
+      "High-quality, intent-driven content",
+      "Paid search bidding"
+    ],
+    "answer": 3,
+    "explain": "The three pillars: indexation, keyword/prompt research, intent-driven content."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-pre-reading",
+    "q": "“Nike login” is which type of search intent?",
+    "options": [
+      "Informational",
+      "Commercial",
+      "Navigational",
+      "Transactional"
+    ],
+    "answer": 2,
+    "explain": "Navigational: the user wants to find a specific site."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-pre-reading",
+    "q": "Roughly what share of all web searches are long-tail variations?",
+    "options": [
+      "10–15%",
+      "15–20%",
+      "About 50%",
+      "Roughly 70%"
+    ],
+    "answer": 3,
+    "explain": "Head terms ≈10–15%, mid-length ≈15–20%, long-tail ≈70%."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-pre-reading",
+    "q": "Why do long-tail keywords usually give a better ROAS in paid search?",
+    "options": [
+      "They have higher search volume",
+      "Less bidding competition means a lower CPC",
+      "Google rewards long ads",
+      "They avoid the attribution window"
+    ],
+    "answer": 1,
+    "explain": "Lower CPC plus visitors closer to purchase."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-pre-reading",
+    "q": "Which tool is described as the “source of truth” for search volume and CPC, straight from Google Ads?",
+    "options": [
+      "Google Search Console",
+      "Google Keyword Planner",
+      "AnswerThePublic",
+      "SE Ranking"
+    ],
+    "answer": 1,
+    "explain": "Search Console audits your own site’s queries; Keyword Planner gives raw volume, seasonality and CPC."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w2-pre-reading",
+    "q": "Which metric is described as the ultimate baseline UX metric?",
+    "options": [
+      "Net Promoter Score",
+      "Task success rate",
+      "Time on task",
+      "Bounce rate"
+    ],
+    "answer": 1,
+    "explain": "TSR: the % of users who complete a defined task, e.g. a checkout."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w2-pre-reading",
+    "q": "A System Usability Scale score of 82 is…",
+    "options": [
+      "Below average",
+      "Average",
+      "World class",
+      "Not possible — SUS runs 1–7"
+    ],
+    "answer": 2,
+    "explain": "Above 68 is average; above 80 is world class."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w2-pre-reading",
+    "q": "Why is NPS called a lagging indicator of UX quality compared to CES?",
+    "options": [
+      "It measures long-term loyalty rather than the ease of a specific interaction",
+      "It is collected less often by law",
+      "It only applies to B2B",
+      "It has a 1–7 scale"
+    ],
+    "answer": 0,
+    "explain": "CES asks how easy today’s interaction was; NPS measures likelihood to recommend over time."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w2-pre-reading",
+    "q": "Which is an attitudinal (user feedback) metric rather than a behavioural one?",
+    "options": [
+      "User error rate",
+      "Drop-off rate",
+      "Customer Effort Score",
+      "Time on task"
+    ],
+    "answer": 2,
+    "explain": "Behavioural metrics are tracked automatically; attitudinal ones come from user feedback."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w2-pre-reading",
+    "q": "In the CUPID score, what does the “P” stand for?",
+    "options": [
+      "Performance",
+      "Pricing",
+      "Personalisation",
+      "Privacy"
+    ],
+    "answer": 2,
+    "explain": "Convenience, Understanding, Personalisation, Intimacy, Data."
+  },
+  {
+    "course": "masters-thesis",
+    "note": "tfm-rd1-brief",
+    "q": "In Deliverable 1, each buyer persona must be classified as…",
+    "options": [
+      "Primary, secondary or tertiary",
+      "Brand lover, loyal or occasional",
+      "B2B, B2C or B2G",
+      "Innovator, early adopter or laggard"
+    ],
+    "answer": 1,
+    "explain": "The brief asks to distinguish whether a persona is a brand lover, loyal or occasional customer."
+  },
+  {
+    "course": "masters-thesis",
+    "note": "tfm-rd1-deliverable",
+    "q": "How many followers did the boutique account @jackobbuczynskigarage have on 28 Oct 2026?",
+    "options": [
+      "96.9k",
+      "3,000",
+      "1,886",
+      "343"
+    ],
+    "answer": 3,
+    "explain": "343 is the baseline; the proposed Oct 2027 target is 3,000. 96.9k is the main account."
+  },
+  {
+    "course": "masters-thesis",
+    "note": "tfm-research-barcelona",
+    "q": "What do the research reports identify as the main reason Barcelona Reels lost reach?",
+    "options": [
+      "Poor video quality",
+      "Distribution: Polish captions reaching people who can’t visit",
+      "Instagram algorithm bans",
+      "Too many paid partnerships"
+    ],
+    "answer": 1,
+    "explain": "People who saw the September Reels engaged well (≈3.6% per view); the content reached the wrong country."
+  },
+  {
+    "course": "masters-thesis",
+    "note": "tfm-rd1-deliverable",
+    "q": "How many hours a week is the Gràcia boutique open, compared with nearby vintage shops?",
+    "options": [
+      "25 h vs 40–60 h",
+      "40 h vs 25 h",
+      "60 h vs 40 h",
+      "35 h vs 35 h"
+    ],
+    "answer": 0,
+    "explain": "Wed–Sun 15:00–20:00 = 25 h. Target: 35–40 h."
+  },
+  {
+    "course": "masters-thesis",
+    "note": "tfm-research-barcelona",
+    "q": "Which hashtags put the boutique in the “cheapest, most crowded category”?",
+    "options": [
+      "#upcycling #designer",
+      "#vintagebarcelona #thriftbarcelona",
+      "#gracia #barcelona",
+      "#slowfashion #handmade"
+    ],
+    "answer": 1,
+    "explain": "The plan repositions it from vintage/thrift to an upcycling atelier and experience."
+  }
 ]
