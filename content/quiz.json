@@ -700,5 +700,590 @@
     ],
     "answer": 1,
     "explain": "The plan repositions it from vintage/thrift to an upcycling atelier and experience."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-seo-1",
+    "q": "SEO improves a website's visibility in which results?",
+    "options": [
+      "Organic results",
+      "Paid search ads",
+      "Shopping ads only",
+      "Display network"
+    ],
+    "answer": 0,
+    "explain": "SEO is about organic (unpaid) results; ads and shopping are paid search."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-seo-1",
+    "q": "What are the three steps from publishing a page to ranking?",
+    "options": [
+      "Crawl → index → rank",
+      "Index → crawl → rank",
+      "Rank → crawl → index",
+      "Submit → approve → rank"
+    ],
+    "answer": 0,
+    "explain": "Bots crawl (discover) the page, store it in the index, then rank it for queries."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-seo-1",
+    "q": "\"iPhone X store Barcelona\" is which type of search intent?",
+    "options": [
+      "Local",
+      "Navigational",
+      "Informational",
+      "Ambiguous"
+    ],
+    "answer": 0,
+    "explain": "A place in the query signals local intent. \"Buy iPhone X\" is transactional, \"iPhone X features\" informational."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-seo-1",
+    "q": "\"iPhone X\" on its own is classed as…",
+    "options": [
+      "Ambiguous",
+      "Transactional",
+      "Navigational",
+      "Multimedia"
+    ],
+    "answer": 0,
+    "explain": "With no modifier you can't tell what the user wants, so it's ambiguous."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-seo-1",
+    "q": "Which tool shows search engine market share by country?",
+    "options": [
+      "Statcounter",
+      "Screaming Frog",
+      "Yoast SEO",
+      "Majestic"
+    ],
+    "answer": 0,
+    "explain": "Statcounter shows market share by country and period: the starting point for choosing engines per market."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-seo-1",
+    "q": "The keyword principle from class is…",
+    "options": [
+      "One keyword, one landing page",
+      "One keyword per website",
+      "As many keywords as possible per page",
+      "One landing page per language"
+    ],
+    "answer": 0,
+    "explain": "Each target keyword (search intent) gets its own relevant page."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-seo-1",
+    "q": "Which on-site element is noted as no longer a ranking factor?",
+    "options": [
+      "Meta description",
+      "Title",
+      "H1",
+      "Internal linking"
+    ],
+    "answer": 0,
+    "explain": "The meta description still affects clicks (CTR) but not rankings."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-seo-1",
+    "q": "In keyword selection you look for…",
+    "options": [
+      "The best balance of ranking difficulty and potential traffic",
+      "The highest volume regardless of difficulty",
+      "The lowest difficulty regardless of volume",
+      "Only branded terms"
+    ],
+    "answer": 0,
+    "explain": "High volume with impossible difficulty brings nothing; easy terms with no volume bring nothing either."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w3-seo-1",
+    "q": "How do you see a page the way Google sees it (its source code)?",
+    "options": [
+      "Ctrl + U",
+      "Ctrl + S",
+      "Ctrl + F",
+      "Ctrl + P"
+    ],
+    "answer": 0,
+    "explain": "Ctrl + U opens view-source: Google reads the code, not the design."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Which is NOT a reason a page's ranking fluctuates?",
+    "options": [
+      "The page reached position 1, so it's fixed",
+      "Changes to your content or links",
+      "Changes on competitor sites",
+      "Search algorithm changes"
+    ],
+    "answer": 0,
+    "explain": "Rankings are never permanent: your changes, competitors' changes and algorithm updates all move them."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "What does INP measure in Core Web Vitals?",
+    "options": [
+      "Interactivity",
+      "Loading performance",
+      "Visual stability",
+      "Indexation"
+    ],
+    "answer": 0,
+    "explain": "LCP = loading, INP = interactivity, CLS = visual stability."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "CLS (Cumulative Layout Shift) measures…",
+    "options": [
+      "Visual stability",
+      "Server response time",
+      "Interactivity",
+      "Click-through rate"
+    ],
+    "answer": 0,
+    "explain": "CLS tracks how much the layout jumps around while loading."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "The \"air fryer\" SERP is mostly informational. Where should you target that keyword?",
+    "options": [
+      "A blog post",
+      "An e-commerce product page",
+      "The home page",
+      "A checkout page"
+    ],
+    "answer": 0,
+    "explain": "Match the search intent (RankBrain): informational queries rank blog content, not product pages."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "According to Search Engine Journal, the top three ranking factors are…",
+    "options": [
+      "High-quality content, page experience, links",
+      "Keywords in meta tags, HTTPS, domain age",
+      "Social shares, ads spend, backlinks",
+      "Page speed, schema, sitemap"
+    ],
+    "answer": 0,
+    "explain": "New factors keep arriving, but quality content (which earns links) stays the base."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Google Panda (2011) mainly targeted…",
+    "options": [
+      "Low-quality and duplicate content, spam, malware",
+      "Unnatural link profiles",
+      "Sites without a mobile version",
+      "Pages without HTTPS"
+    ],
+    "answer": 0,
+    "explain": "Panda cleaned the SERPs of thin, duplicate and spammy content. Links were Penguin's job."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Google Penguin targets…",
+    "options": [
+      "Unnatural links and over-optimised anchors",
+      "Slow pages",
+      "Duplicate content only",
+      "Missing alt text"
+    ],
+    "answer": 0,
+    "explain": "Penguin hits reciprocal-link overuse, keyword-rich anchors, keyword stuffing and bought links."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Roughly what share of a natural link profile uses brand or non-descriptive anchor text?",
+    "options": [
+      "About 70%",
+      "About 10%",
+      "About 30%",
+      "100%"
+    ],
+    "answer": 0,
+    "explain": "About 70% brand/non-descriptive anchors; the rest exact or phrase match."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "BERT helps Google to…",
+    "options": [
+      "Understand the intent and context of a query",
+      "Measure page speed",
+      "Detect bought links",
+      "Index mobile pages first"
+    ],
+    "answer": 0,
+    "explain": "BERT is NLP: individual words matter less, search intent more."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "What does E-E-A-T stand for?",
+    "options": [
+      "Experience, Expertise, Authority, Trustworthiness",
+      "Engagement, Expertise, Accuracy, Traffic",
+      "Experience, Efficiency, Authority, Timeliness",
+      "Expertise, Evidence, Accessibility, Trust"
+    ],
+    "answer": 0,
+    "explain": "Google's quality raters guidelines; especially important for YMYL content."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "YMYL content is…",
+    "options": [
+      "Content that can affect health, money, legal or safety decisions",
+      "Your own brand's YouTube content",
+      "Content aimed at young users",
+      "Any page with ads"
+    ],
+    "answer": 0,
+    "explain": "Your Money or Your Life: health, financial, legal, safety and life-affecting content, held to higher standards."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "The Mobile-First Index means Google…",
+    "options": [
+      "Indexes and ranks the mobile version of a site",
+      "Only shows results on phones",
+      "Removes desktop-only sites",
+      "Ranks apps above websites"
+    ],
+    "answer": 0,
+    "explain": "Launched Oct 2017, fully rolled out 2021. Different content on mobile vs desktop can hurt rankings."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Where must robots.txt be placed?",
+    "options": [
+      "In the root of the domain",
+      "In every folder",
+      "In the <head> of each page",
+      "In Google Search Console only"
+    ],
+    "answer": 0,
+    "explain": "Bots look for /robots.txt at the domain root."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Which method can de-index a page that is already in Google's index?",
+    "options": [
+      "A noindex tag",
+      "A sitemap",
+      "Adding more internal links",
+      "A 301 to itself"
+    ],
+    "answer": 0,
+    "explain": "noindex keeps pages out of the index and removes indexed ones."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "You move your site to a new domain. How do you transfer rankings and link equity?",
+    "options": [
+      "301 redirects",
+      "302 redirects",
+      "A new sitemap only",
+      "robots.txt"
+    ],
+    "answer": 0,
+    "explain": "A 301 says \"moved permanently\" and passes authority to the new URL; it's the only way to transfer it all."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "A canonical URL is…",
+    "options": [
+      "The \"master\" version of duplicate or near-duplicate pages",
+      "The shortest URL on the site",
+      "The home page",
+      "A URL blocked in robots.txt"
+    ],
+    "answer": 0,
+    "explain": "Google indexes and shows the canonical version of a set of similar pages."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Which site architecture is recommended for SEO?",
+    "options": [
+      "Flat",
+      "Deep",
+      "Vertical-only",
+      "Single-page"
+    ],
+    "answer": 0,
+    "explain": "The more clicks (crawl depth) to reach a page, the less relevant it seems. Fewer clicks is better."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Which structured-data format does Google recommend?",
+    "options": [
+      "JSON-LD",
+      "Microdata",
+      "RDFa",
+      "XML sitemap"
+    ],
+    "answer": 0,
+    "explain": "Schema markup can be JSON-LD, Microdata or RDFa; Google recommends JSON-LD."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "The \"halo effect\" in SEO means…",
+    "options": [
+      "Ranking for many long-tail keywords with one root makes the short-head keyword easier",
+      "Brand searches lift all pages equally",
+      "Good design raises rankings",
+      "Old domains rank better"
+    ],
+    "answer": 0,
+    "explain": "Long-tail wins with the same root build relevance for the competitive head term and synonyms."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Good practice for links per page is…",
+    "options": [
+      "Fewer than 100",
+      "At least 200",
+      "Exactly 10",
+      "No internal links"
+    ],
+    "answer": 0,
+    "explain": "Fewer clicks, under 100 links per page, logical semantic links."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w4-seo-2",
+    "q": "Why doesn't a new sitemap guarantee quick crawling?",
+    "options": [
+      "Google must know about it: submit it in Search Console",
+      "Sitemaps are ignored by Google",
+      "It must be printed in the footer",
+      "It only works with HTTPS"
+    ],
+    "answer": 0,
+    "explain": "Submit the sitemap URL in GSC so Google crawls the site more often."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Backlinks are part of…",
+    "options": [
+      "Off-page SEO",
+      "On-page SEO",
+      "Technical SEO only",
+      "Paid search"
+    ],
+    "answer": 0,
+    "explain": "Links from other sites are off-page factors."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Which is worth more?",
+    "options": [
+      "100 links from 100 different websites",
+      "100 links from one website",
+      "They are equal",
+      "1 link from a footer"
+    ],
+    "answer": 0,
+    "explain": "Link variety: diversity of linking domains matters."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Which link placement is the most valuable?",
+    "options": [
+      "In the main content, near the start",
+      "Sidebar",
+      "Footer",
+      "Blogroll"
+    ],
+    "answer": 0,
+    "explain": "<main> content > sidebar > footer."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Domain Authority (DA) is…",
+    "options": [
+      "A Moz score (1–100) predicting ranking potential, not used by Google",
+      "A Google ranking factor",
+      "Google's PageRank score",
+      "A Search Console metric"
+    ],
+    "answer": 0,
+    "explain": "Moz created DA around 2010. Useful to compare sites; Google doesn't use it."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "A Private Blog Network (B → A, A → C, C → B) is…",
+    "options": [
+      "A link scheme that violates Google's spam policy",
+      "A safe reciprocal-link strategy",
+      "A link directory",
+      "A type of rich snippet"
+    ],
+    "answer": 0,
+    "explain": "Link schemes are black-hat SEO and harm rankings."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "The skyscraper technique means…",
+    "options": [
+      "Improving outdated popular content and telling those who linked to it",
+      "Building the tallest page on the site",
+      "Buying links from high-DA sites",
+      "Linking from every footer"
+    ],
+    "answer": 0,
+    "explain": "Make the better version, then ask the existing linkers to point to yours."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Asking a site that mentions your brand to add a link is called…",
+    "options": [
+      "Unlinked mentions",
+      "Broken link building",
+      "Guest posting",
+      "Image credit"
+    ],
+    "answer": 0,
+    "explain": "Turn brand mentions without a link into backlinks."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Recommended alt text for a Google Images keyword is…",
+    "options": [
+      "A descriptive phrase of up to 8 words with the keyword",
+      "Only the keyword repeated",
+      "The file size",
+      "Empty, so Google decides"
+    ],
+    "answer": 0,
+    "explain": "Include the keyword, max ~8 words; \"photo\" or \"image\" can help."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Target file size for images is…",
+    "options": [
+      "Under 100 KB, ideally .webp",
+      "Under 1 MB, any format",
+      "Over 500 KB for quality",
+      "Size doesn't matter"
+    ],
+    "answer": 0,
+    "explain": "Light images, .webp for better compression."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "How far back does the Search Console Performance report go?",
+    "options": [
+      "16 months",
+      "30 days",
+      "5 years",
+      "90 days"
+    ],
+    "answer": 0,
+    "explain": "Position, impressions, CTR and clicks for up to 16 months."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Which is NOT a Search Console verification method?",
+    "options": [
+      "Buying Google Ads",
+      "HTML file upload",
+      "DNS TXT record",
+      "Google Tag Manager"
+    ],
+    "answer": 0,
+    "explain": "Methods: HTML file, HTML meta tag, DNS record, Google Analytics, Google Tag Manager."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Which GSC report shows why URLs are excluded from the index?",
+    "options": [
+      "Pages",
+      "Performance",
+      "Links",
+      "Sitemaps"
+    ],
+    "answer": 0,
+    "explain": "Pages shows indexed vs excluded URLs with reasons such as robots.txt or noindex."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "Screaming Frog is…",
+    "options": [
+      "An SEO spider that crawls sites and collects titles, headers and meta data",
+      "A keyword volume tool from Google",
+      "A WordPress plugin",
+      "A backlink marketplace"
+    ],
+    "answer": 0,
+    "explain": "Useful for auditing your own and competitors' sites."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "In the Café Metro \"Pay with a Kiss\" case, the coffee cost…",
+    "options": [
+      "A kiss and a Facebook share",
+      "Nothing, with no conditions",
+      "A newsletter sign-up",
+      "One euro"
+    ],
+    "answer": 0,
+    "explain": "1,016 kisses in 2 months, 140 media outlets, $2.4M AUD earned media value."
+  },
+  {
+    "course": "digital-marketing-advertising",
+    "note": "dma-w5-seo-3",
+    "q": "A Veblen good is one where…",
+    "options": [
+      "Demand rises as the price rises",
+      "Demand falls as the price rises",
+      "Price never changes",
+      "Supply is unlimited"
+    ],
+    "answer": 0,
+    "explain": "Status-driven demand, shown with the ugly-sneakers example."
   }
 ]

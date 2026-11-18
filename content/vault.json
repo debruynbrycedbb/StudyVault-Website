@@ -57,7 +57,7 @@
       "period": "P1",
       "status": "current",
       "color": "#E0A84B",
-      "about": "Building a digital marketing plan: strategy frameworks (digital strategy, SWOT, competitive analysis, PEST), then SEO and keyword research.",
+      "about": "Building a digital marketing plan: strategy frameworks (digital strategy, SWOT, competitive analysis, PEST), then three SEO sessions: search engines and keywords, ranking factors and site architecture, link building and SEO tools.",
       "weeks": [
         {
           "n": 2,
@@ -72,13 +72,37 @@
         },
         {
           "n": 3,
-          "title": "SEO and keyword research",
+          "title": "SEO I: search engines, intent and keywords",
           "date": "",
           "notes": [
+            "dma-w3-seo-1",
             "dma-w3-pre-reading"
           ],
           "files": [
+            "dma-w3-seo1-pdf",
             "dma-w3-prereading-pdf"
+          ]
+        },
+        {
+          "n": 4,
+          "title": "SEO II: ranking factors, updates and architecture",
+          "date": "",
+          "notes": [
+            "dma-w4-seo-2"
+          ],
+          "files": [
+            "dma-w4-seo2-pdf"
+          ]
+        },
+        {
+          "n": 5,
+          "title": "SEO III: link building, images and SEO tools",
+          "date": "",
+          "notes": [
+            "dma-w5-seo-3"
+          ],
+          "files": [
+            "dma-w5-seo3-pdf"
           ]
         }
       ],
@@ -498,6 +522,64 @@
         "We Are Social",
         "GEO"
       ]
+    },
+    {
+      "id": "dma-w3-seo-1",
+      "course": "digital-marketing-advertising",
+      "week": 3,
+      "title": "SEO I: introduction to SEO, search intent and keywords",
+      "date": "",
+      "path": "content/notes/dma-w3-seo-1.md",
+      "source": "dma-w3-seo1-pdf",
+      "tags": [
+        "SEO",
+        "search intent",
+        "crawl index rank",
+        "on-page",
+        "keyword research",
+        "Statcounter"
+      ]
+    },
+    {
+      "id": "dma-w4-seo-2",
+      "course": "digital-marketing-advertising",
+      "week": 4,
+      "title": "SEO II: ranking factors, algorithm updates, information architecture",
+      "date": "",
+      "path": "content/notes/dma-w4-seo-2.md",
+      "source": "dma-w4-seo2-pdf",
+      "tags": [
+        "ranking factors",
+        "Core Web Vitals",
+        "Panda",
+        "Penguin",
+        "BERT",
+        "E-E-A-T",
+        "robots.txt",
+        "sitemap",
+        "301",
+        "canonical",
+        "schema"
+      ]
+    },
+    {
+      "id": "dma-w5-seo-3",
+      "course": "digital-marketing-advertising",
+      "week": 5,
+      "title": "SEO III: link building, Google Images, Search Console and SEO tools",
+      "date": "",
+      "path": "content/notes/dma-w5-seo-3.md",
+      "source": "dma-w5-seo3-pdf",
+      "tags": [
+        "link building",
+        "backlinks",
+        "Domain Authority",
+        "anchor text",
+        "Google Images",
+        "Search Console",
+        "Yoast",
+        "Screaming Frog"
+      ]
     }
   ],
   "files": [
@@ -662,6 +744,33 @@
       "title": "Sources and info (Word)",
       "path": "files/masters-thesis/resources-sources-and-info.docx",
       "size": 13675
+    },
+    {
+      "id": "dma-w3-seo1-pdf",
+      "course": "digital-marketing-advertising",
+      "week": 3,
+      "kind": "Slides",
+      "title": "SEO I slides: introduction to SEO and search engines (PDF)",
+      "path": "files/digital-marketing-advertising/week-03-seo-1-slides.pdf",
+      "size": 3463884
+    },
+    {
+      "id": "dma-w4-seo2-pdf",
+      "course": "digital-marketing-advertising",
+      "week": 4,
+      "kind": "Slides",
+      "title": "SEO II slides: ranking factors, updates, architecture, content (PDF)",
+      "path": "files/digital-marketing-advertising/week-04-seo-2-slides.pdf",
+      "size": 4118002
+    },
+    {
+      "id": "dma-w5-seo3-pdf",
+      "course": "digital-marketing-advertising",
+      "week": 5,
+      "kind": "Slides",
+      "title": "SEO III slides: link building, Google Images, tools (PDF)",
+      "path": "files/digital-marketing-advertising/week-05-seo-3-slides.pdf",
+      "size": 3375868
     }
   ],
   "deadlines": [
@@ -1012,6 +1121,58 @@
         ],
         "summary": "Adobe moved to the Creative Cloud subscription model; Starbucks integrated mobile ordering, payments and loyalty; Renault ran 15 digital pilots across functions, achieving a 25% increase in EBIT.",
         "lesson": "A digital strategy reaches beyond marketing into business models and operations."
+      },
+      {
+        "id": "c-ricky",
+        "title": "Ricky.com: a job ad that earned links",
+        "course": "digital-marketing-advertising",
+        "note": "dma-w5-seo-3",
+        "tags": [
+          "link building",
+          "PR",
+          "newsworthy"
+        ],
+        "summary": "Opened a position for a sex-toy tester. Result: 96 top-level backlinks, 43,000 visits and 10,000 emails.",
+        "lesson": "Newsworthy, surprising content earns backlinks that outreach alone can't."
+      },
+      {
+        "id": "c-casino-ca",
+        "title": "Online casino Canada: \"Future gamer\" awareness campaign",
+        "course": "digital-marketing-advertising",
+        "note": "dma-w5-seo-3",
+        "tags": [
+          "link building",
+          "awareness",
+          "PR"
+        ],
+        "summary": "An awareness campaign on the impact of online gambling gained 400 backlinks, 1,000,000 social engagements, headlines and reference pages, and media attention in 41 countries.",
+        "lesson": "A campaign with a story journalists want to cover becomes a link-building engine."
+      },
+      {
+        "id": "c-cafe-metro",
+        "title": "Café Metro St. James: \"Pay with a Kiss\"",
+        "course": "digital-marketing-advertising",
+        "note": "dma-w5-seo-3",
+        "tags": [
+          "newsworthy content",
+          "earned media",
+          "link building"
+        ],
+        "summary": "Free coffee in exchange for a kiss and a Facebook share. 1,016 kisses in 2 months, 500,000 YouTube views in 2 weeks, coverage in 29 countries and 140 media outlets, $2.4M AUD earned media value, full venue for 2 months.",
+        "lesson": "A simple promotional mechanism with a newsworthy hook generates publicity, links and footfall."
+      },
+      {
+        "id": "c-ugly-sneakers",
+        "title": "Ugly sneakers: astonishing products earn links",
+        "course": "digital-marketing-advertising",
+        "note": "dma-w5-seo-3",
+        "tags": [
+          "Veblen goods",
+          "scarcity",
+          "link building"
+        ],
+        "summary": "July 2020 trend for \"ugly sneakers\" in some Nordic countries, driven by scarcity and Veblen-good behaviour (demand rises with price). The media buzz generated many backlinks.",
+        "lesson": "Astonishing or fake products and facts can create media buzz and backlinks."
       }
     ],
     "tools": [
@@ -1141,6 +1302,54 @@
         "category": "AI research",
         "course": "masters-thesis",
         "summary": "Listed in the thesis sources as a tool to find competitors and best customers."
+      },
+      {
+        "id": "t-screaming-frog",
+        "title": "Screaming Frog",
+        "category": "SEO crawler",
+        "course": "digital-marketing-advertising",
+        "url": "https://www.screamingfrog.co.uk/seo-spider/",
+        "summary": "SEO spider that crawls a site and collects each page's meta titles, headers, meta keywords and meta descriptions. For audits of your own or competitors' sites (SEO III)."
+      },
+      {
+        "id": "t-yoast",
+        "title": "Yoast SEO",
+        "category": "WordPress plugin",
+        "course": "digital-marketing-advertising",
+        "url": "https://yoast.com/wordpress/plugins/seo/",
+        "summary": "WordPress SEO plugin: XML sitemaps (SEO → General → Features → XML Sitemaps), titles, slugs, and a per-page audit against the main keyword (SEO II and III)."
+      },
+      {
+        "id": "t-moz-link-explorer",
+        "title": "Moz Link Explorer",
+        "category": "Backlink analysis",
+        "course": "digital-marketing-advertising",
+        "url": "https://moz.com/link-explorer",
+        "summary": "Backlink analysis with Domain Authority (1–100, Moz's metric, not used by Google), spam score and Link Intersect for competitor links (SEO III)."
+      },
+      {
+        "id": "t-majestic",
+        "title": "Majestic SEO",
+        "category": "Backlink analysis",
+        "course": "digital-marketing-advertising",
+        "url": "https://majestic.com",
+        "summary": "Backlink analysis tool shown for link profiles and competitor backlinks (SEO III)."
+      },
+      {
+        "id": "t-statcounter",
+        "title": "Statcounter",
+        "category": "Market data",
+        "course": "digital-marketing-advertising",
+        "url": "https://gs.statcounter.com/search-engine-market-share",
+        "summary": "Search engine market share by country and time period: use it to choose which engines to target in each market (SEO I)."
+      },
+      {
+        "id": "t-rich-results",
+        "title": "Rich Results Test",
+        "category": "Structured data",
+        "course": "digital-marketing-advertising",
+        "url": "https://search.google.com/test/rich-results",
+        "summary": "Google's test for schema markup / rich snippets (JSON-LD recommended) (SEO II)."
       }
     ],
     "resources": [

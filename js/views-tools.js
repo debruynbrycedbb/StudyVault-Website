@@ -12,8 +12,41 @@
     { id: 'debate', title: 'Debate prep', icon: 'chat', text: 'Write your position on each class debate question before the session.' }
   ];
 
-  function questionsFor(course) {
-    return SV.quizBank.filter((q) => !course || q.course === course);
+  function questionsFor(course, note) {
+    return SV.quizBank.filter((q) => (!course || q.course === course) && (!note || q.note === note));
+  }
+  // Notes that have quiz questions, in course order (week, then position) — used as "topics".
+  function topicsFor(course) {
+    if (!course) return [];
+    const ids = Array.from(new Set(questionsFor(course).map((q) => q.note)));
+    return ids.map(SV.note).filter(Boolean).sort((a, b) => (a.week || 0) - (b.week || 0));
+  }
+  const topicName = (n) => (n.week ? 'W' + n.week + ' ' : '') + n.title.split(':')[0];
+  // Upcoming exams for courses that have quiz questions.
+  function nextExams() {
+    const now = new Date();
+    return SV.deadlines().filter((d) => d.type === 'Exam' && !d.done && SV.endOfDeadline(d) >= now && questionsFor(d.course).length).slice(0, 2);
+  }
+  function examPrep(hist, known) {
+    const exams = nextExams();
+    if (!exams.length) return '';
+    return '<section class="sec" aria-labelledby="examH"><div class="sec-head"><h2 id="examH">Exam prep</h2></div><div class="exam-grid">' + exams.map((d) => {
+      const c = SV.course(d.course);
+      const days = SV.daysUntil(d.date);
+      const qs = questionsFor(d.course);
+      const cardIds = deck().filter((x) => x.course === d.course).map((x) => x.id);
+      const knownN = cardIds.filter((id) => known[id]).length;
+      const scores = hist.filter((h) => h.course === d.course && !h.note).map((h) => Math.round(h.score / h.total * 100));
+      const best = scores.length ? Math.max.apply(null, scores) : null;
+      const topics = topicsFor(d.course);
+      return '<div class="panel exam-card" style="--c:' + SV.courseColor(d.course) + '">' +
+        '<div class="ex-top"><p class="ex-days"><b>' + (days <= 0 ? 'Today' : days) + '</b>' + (days > 0 ? '<span>' + (days === 1 ? 'day' : 'days') + ' to go</span>' : '') + '</p>' +
+        '<div><p class="q-course"><span class="dot"></span>' + esc(c ? c.name : SV.courseName(d.course)) + '</p><h3 class="ex-title">' + esc(d.title) + '</h3><p class="muted">' + esc(SV.fmt(d.date, { weekday: 'long', day: 'numeric', month: 'long' })) + (d.time ? ' · ' + esc(d.time) : '') + '</p></div></div>' +
+        '<ul class="ex-stats"><li><b>' + qs.length + '</b> questions</li><li><b>' + knownN + '/' + cardIds.length + '</b> cards known</li><li><b>' + (best == null ? '—' : best + '%') + '</b> best full quiz</li></ul>' +
+        '<div class="ex-actions"><a class="btn btn-primary" href="#/tools/quiz?course=' + d.course + '">' + SV.icon('quiz') + 'Quiz the course</a><a class="btn btn-ghost" href="#/tools/flashcards?course=' + d.course + '">' + SV.icon('cards') + 'Flashcards</a><a class="btn btn-ghost" href="#/course/' + d.course + '">Notes</a></div>' +
+        (topics.length > 1 ? '<p class="ex-topics-h">Drill one topic</p><div class="filters">' + topics.map((n) => '<a class="filter" href="#/tools/quiz?course=' + d.course + '&note=' + n.id + '">' + esc(topicName(n)) + ' <em>' + questionsFor(d.course, n.id).length + '</em></a>').join('') + '</div>' : '') +
+      '</div>';
+    }).join('') + '</div></section>';
   }
   function quizCourses() {
     const ids = Array.from(new Set(SV.quizBank.map((q) => q.course)));
@@ -31,36 +64,53 @@
     const best = hist.length ? Math.max.apply(null, hist.map((h) => Math.round(h.score / h.total * 100))) : null;
     const stat = { quiz: hist.length ? hist.length + ' attempts · best ' + best + '%' : SV.quizBank.length + ' questions', flashcards: Object.keys(SV.LS.get('known', {})).length + ' of ' + deck().length + ' marked known', focus: mins ? mins + ' min logged' : 'Nothing logged yet', formulas: '4 metrics', debate: Object.keys(SV.LS.get('debates', {})).length + ' of ' + (SV.vault.debates || []).length + ' answered' };
     view.innerHTML = '<header class="page-head"><div><p class="crumb">Study tools</p><h1 class="display sm">Study tools</h1><p class="page-sub">Everything here is built from your own course material.</p></div></header>' +
+      examPrep(hist, SV.LS.get('known', {})) +
       '<div class="tool-grid">' + TOOLS.map((t) => '<a class="tool-card" href="#/tools/' + t.id + '">' + SV.icon(t.icon) + '<h2>' + t.title + '</h2><p>' + t.text + '</p><span class="tc-stat">' + stat[t.id] + '</span></a>').join('') + '</div>' +
       (hist.length ? '<section class="sec"><div class="sec-head"><h2>Recent quiz scores</h2></div><ul class="score-list">' + hist.slice(-6).reverse().map((h) =>
-        '<li><span class="dot" style="--c:' + SV.courseColor(h.course) + '"></span>' + esc(h.course ? SV.courseName(h.course) : 'All courses') + '<span class="bar"><i style="width:' + Math.round(h.score / h.total * 100) + '%"></i></span><b>' + h.score + '/' + h.total + '</b><em>' + new Date(h.ts).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) + '</em></li>').join('') + '</ul></section>' : '');
+        '<li><span class="dot" style="--c:' + SV.courseColor(h.course) + '"></span>' + esc(h.course ? SV.courseName(h.course) : 'All courses') + (h.note && SV.note(h.note) ? ' · ' + esc(topicName(SV.note(h.note))) : h.retry ? ' · missed' : '') + '<span class="bar"><i style="width:' + Math.round(h.score / h.total * 100) + '%"></i></span><b>' + h.score + '/' + h.total + '</b><em>' + new Date(h.ts).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) + '</em></li>').join('') + '</ul></section>' : '');
   }
 
   /* ---------- Quiz ---------- */
   let quiz = null;
   function quizSetup(view, params) {
     const pre = params.get('course') || '';
+    const preNote = params.get('note') || '';
     view.innerHTML = toolHead('Practice quiz', 'Questions are written from your notes. Each answer comes with the explanation and a link back to the source.') +
       '<form class="panel quiz-setup" id="qs">' +
         '<fieldset><legend>Course</legend><div class="choice-row">' +
           '<label class="choice"><input type="radio" name="course" value=""' + (!pre ? ' checked' : '') + '><span>All courses <em>' + SV.quizBank.length + '</em></span></label>' +
           quizCourses().map((c) => '<label class="choice" style="--c:' + c.color + '"><input type="radio" name="course" value="' + c.id + '"' + (pre === c.id ? ' checked' : '') + '><span><i class="dot"></i>' + esc(c.name) + ' <em>' + questionsFor(c.id).length + '</em></span></label>').join('') +
         '</div></fieldset>' +
+        '<fieldset id="topicSet" hidden><legend>Topic</legend><div class="choice-row" id="topics"></div></fieldset>' +
         '<fieldset><legend>Length</legend><div class="choice-row">' +
-          [5, 10, 0].map((n, i) => '<label class="choice"><input type="radio" name="len" value="' + n + '"' + (i === 0 ? ' checked' : '') + '><span>' + (n ? n + ' questions' : 'Every question') + '</span></label>').join('') +
+          [5, 10, 0].map((n, i) => '<label class="choice"><input type="radio" name="len" value="' + n + '"' + (i === (preNote ? 2 : 0) ? ' checked' : '') + '><span>' + (n ? n + ' questions' : 'Every question') + '</span></label>').join('') +
         '</div></fieldset>' +
         '<button class="btn btn-primary" type="submit">' + SV.icon('play') + 'Start quiz</button>' +
       '</form>';
-    view.querySelector('#qs').addEventListener('submit', (e) => {
+    const form = view.querySelector('#qs');
+    const paintTopics = (sel) => {
+      const course = new FormData(form).get('course');
+      const topics = topicsFor(course);
+      view.querySelector('#topicSet').hidden = topics.length < 2;
+      view.querySelector('#topics').innerHTML = '<label class="choice"><input type="radio" name="note" value=""' + (!sel ? ' checked' : '') + '><span>All topics <em>' + questionsFor(course).length + '</em></span></label>' +
+        topics.map((n) => '<label class="choice"><input type="radio" name="note" value="' + n.id + '"' + (sel === n.id ? ' checked' : '') + '><span>' + esc(topicName(n)) + ' <em>' + questionsFor(course, n.id).length + '</em></span></label>').join('');
+    };
+    paintTopics(preNote);
+    form.querySelectorAll('input[name="course"]').forEach((r) => r.addEventListener('change', () => paintTopics('')));
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
       const fd = new FormData(e.target);
       const course = fd.get('course');
+      const note = fd.get('note') || '';
       const len = +fd.get('len');
-      let qs = SV.shuffle(questionsFor(course));
+      let qs = SV.shuffle(questionsFor(course, note));
       if (len) qs = qs.slice(0, len);
-      quiz = { course, qs: qs.map((q) => { const order = SV.shuffle(q.options.map((_, i) => i)); return Object.assign({}, q, { order }); }), i: 0, score: 0, answered: false, misses: [] };
-      quizStep(view);
+      startQuiz(view, { course, note }, qs);
     });
+  }
+  function startQuiz(view, meta, qs) {
+    quiz = Object.assign({ qs: qs.map((q) => { const order = SV.shuffle(q.options.map((_, i) => i)); return Object.assign({}, q, { order }); }), i: 0, score: 0, answered: false, misses: [] }, meta);
+    quizStep(view);
   }
   function quizStep(view) {
     const q = quiz.qs[quiz.i];
@@ -99,7 +149,7 @@
   function quizEnd(view) {
     const pct = Math.round(quiz.score / quiz.qs.length * 100);
     const hist = SV.LS.get('quizHistory', []);
-    hist.push({ course: quiz.course, score: quiz.score, total: quiz.qs.length, ts: Date.now() });
+    hist.push({ course: quiz.course, note: quiz.note || '', retry: !!quiz.retry, score: quiz.score, total: quiz.qs.length, ts: Date.now() });
     SV.LS.set('quizHistory', hist.slice(-50));
     const notesToReview = Array.from(new Set(quiz.misses.map((m) => m.note))).map(SV.note).filter(Boolean);
     view.innerHTML = toolHead('Practice quiz') +
@@ -108,9 +158,11 @@
         '<p class="score-msg">' + (pct === 100 ? 'Perfect score.' : pct >= 70 ? 'Solid — review the ones you missed below.' : 'Worth another pass through the notes below.') + '</p>' +
         (quiz.misses.length ? '<h3 class="sub-h">Review</h3><ul class="miss-list">' + quiz.misses.map((m) => '<li><strong>' + esc(m.q) + '</strong><span>' + esc(m.options[m.answer]) + '</span></li>').join('') + '</ul>' : '') +
         (notesToReview.length ? '<p class="review-notes">Re-read: ' + notesToReview.map((n) => '<a href="#/note/' + n.id + '">' + esc(n.title) + '</a>').join(', ') + '</p>' : '') +
-        '<div class="q-next"><a class="btn btn-ghost" href="#/tools">All study tools</a><button type="button" class="btn btn-primary" id="again">Try again</button></div>' +
+        '<div class="q-next"><a class="btn btn-ghost" href="#/tools">All study tools</a><span class="q-next-r">' + (quiz.misses.length ? '<button type="button" class="btn btn-ghost" id="retry">' + SV.icon('reset') + 'Retry the ' + quiz.misses.length + ' missed</button>' : '') + '<button type="button" class="btn btn-primary" id="again">Try again</button></span></div>' +
       '</div>';
-    view.querySelector('#again').addEventListener('click', () => quizSetup(view, new URLSearchParams(quiz.course ? 'course=' + quiz.course : '')));
+    view.querySelector('#again').addEventListener('click', () => quizSetup(view, new URLSearchParams((quiz.course ? 'course=' + quiz.course : '') + (quiz.note ? '&note=' + quiz.note : ''))));
+    const retry = view.querySelector('#retry');
+    if (retry) retry.addEventListener('click', () => startQuiz(view, { course: quiz.course, note: quiz.note, retry: true }, SV.shuffle(quiz.misses.map((m) => Object.assign({}, m)))));
   }
 
   /* ---------- Flashcards ---------- */
@@ -122,11 +174,13 @@
   let fc = null;
   function flashcards(view, params) {
     const course = params.get('course') || '';
+    const note = course ? params.get('note') || '' : '';
     const known = SV.LS.get('known', {});
-    if (!fc || fc.course !== course) {
-      const cards = deck().filter((c) => !course || c.course === course);
+    const topics = topicsFor(course);
+    if (!fc || fc.course !== course || fc.note !== note) {
+      const cards = deck().filter((c) => (!course || c.course === course) && (!note || c.note === note));
       // Unknown cards first, shuffled.
-      fc = { course, cards: SV.shuffle(cards.filter((c) => !known[c.id])).concat(SV.shuffle(cards.filter((c) => known[c.id]))), i: 0, flipped: false };
+      fc = { course, note, cards: SV.shuffle(cards.filter((c) => !known[c.id])).concat(SV.shuffle(cards.filter((c) => known[c.id]))), i: 0, flipped: false };
     }
     const card = fc.cards[fc.i];
     const knownCount = fc.cards.filter((c) => known[c.id]).length;
@@ -136,6 +190,7 @@
         quizCourses().map((c) => '<a class="filter' + (course === c.id ? ' on' : '') + '" style="--c:' + c.color + '" href="#/tools/flashcards?course=' + c.id + '"><span class="dot"></span>' + esc(c.short) + '</a>').join('') +
       '</div><span class="muted">' + knownCount + ' of ' + fc.cards.length + ' known</span>' +
       '<button type="button" class="btn btn-ghost sm" id="addCard">' + SV.icon('plus') + 'Add your own card</button></div>' +
+      (topics.length > 1 ? '<div class="filters fc-topics" aria-label="Topic"><a class="filter' + (!note ? ' on' : '') + '" href="#/tools/flashcards?course=' + course + '">All topics</a>' + topics.map((n) => '<a class="filter' + (note === n.id ? ' on' : '') + '" href="#/tools/flashcards?course=' + course + '&note=' + n.id + '">' + esc(topicName(n)) + '</a>').join('') + '</div>' : '') +
       (card ? '<div class="fc-stage"><button type="button" class="flashcard' + (fc.flipped ? ' flipped' : '') + '" id="card" style="--c:' + SV.courseColor(card.course) + '" aria-label="Flashcard. ' + (fc.flipped ? 'Showing answer' : 'Showing question') + '. Press to flip.">' +
           '<span class="fc-face fc-front"><span class="fc-k">' + esc(SV.courseShort(card.course)) + (known[card.id] ? ' · known' : '') + '</span><span class="fc-t">' + esc(card.front) + '</span><span class="fc-hint">Show answer</span></span>' +
           '<span class="fc-face fc-back"><span class="fc-k">Answer</span><span class="fc-t">' + esc(card.back) + '</span>' + (card.more ? '<span class="fc-more">' + esc(card.more) + '</span>' : '') + '</span>' +

@@ -177,7 +177,7 @@
           '<p class="meta-line">' + [n.date ? SV.fmt(n.date, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) : '', Math.max(1, Math.round(words / 230)) + ' min read', n.local ? 'Saved in this browser' : ''].filter(Boolean).map(esc).join('<span class="sep"></span>') + '</p>' +
           '<div class="reader-actions">' +
             (src ? '<button type="button" class="btn btn-primary" data-download-file="' + src.id + '">' + SV.icon('download') + 'Download PDF</button><button type="button" class="btn btn-ghost" data-open-file="' + src.id + '">' + SV.icon('external') + 'Open original</button>' : '') +
-            (hasQuiz ? '<a class="btn btn-ghost" href="#/tools/quiz?course=' + n.course + '">' + SV.icon('quiz') + 'Quiz me on ' + esc(c.short) + '</a>' : '') +
+            (SV.quizBank.some((q) => q.note === n.id) ? '<a class="btn btn-ghost" href="#/tools/quiz?course=' + n.course + '&note=' + n.id + '">' + SV.icon('quiz') + 'Quiz me on this note</a>' : hasQuiz ? '<a class="btn btn-ghost" href="#/tools/quiz?course=' + n.course + '">' + SV.icon('quiz') + 'Quiz me on ' + esc(c.short) + '</a>' : '') +
             '<button type="button" class="btn btn-ghost" id="dlMd">' + SV.icon('note') + 'Save as Markdown</button>' +
             (n.local ? '<button type="button" class="btn btn-ghost" id="editNote">' + SV.icon('edit') + 'Edit</button><button type="button" class="btn btn-ghost danger" id="delNote">' + SV.icon('trash') + 'Delete</button>' : '') +
           '</div>' +
