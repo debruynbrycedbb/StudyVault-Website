@@ -145,28 +145,28 @@
   {
     "course": "web-analytics",
     "note": "wa-w1-session-notes",
-    "q": "In the Euromon PLV audit, what was the AI's only source?",
+    "q": "What is the main risk of an AI-prepared audit or analysis?",
     "options": [
-      "The live website",
-      "A Google Search Console export",
-      "The professor's own deleted Reddit post from July 2024",
-      "A competitor analysis"
+      "It is only as good as the sources it was given, so it can be confidently wrong",
+      "It always takes longer than an analyst doing the same work by hand",
+      "It can only describe the past and never recommend an action",
+      "It refuses to answer when the data has any gaps in it"
     ],
-    "answer": 2,
-    "explain": "It repeated what it had read rather than diagnosing anything — the site was no longer on Wix."
+    "answer": 0,
+    "explain": "AI analyses only what it is given: always check the source."
   },
   {
     "course": "web-analytics",
     "note": "wa-w1-session-notes",
-    "q": "Given a two-week Search Console export instead of screenshots, what did the AI conclude?",
+    "q": "Which of these is something AI-powered analytics adds?",
     "options": [
-      "A Google anti-spam update hit the whole site",
-      "3 pages account for 97% of the loss; the rest is stable",
-      "Daily posting should be paused",
-      "Clicks fell from 8 to 0"
+      "Automation, deeper analysis like predicted churn, and explaining what drives results",
+      "Exact data with no need for cookies or consent",
+      "A replacement for the analyst's interpretation and context",
+      "Guaranteed causes for every change in the metrics"
     ],
-    "answer": 1,
-    "explain": "Same AI, same question, opposite answer depending on input. Clicks actually went from 7 to 8."
+    "answer": 0,
+    "explain": "Automates (alerts, checks, reports), goes deeper (micro-segments, predictions), explains (beyond correlation)."
   },
   {
     "course": "web-analytics",
@@ -184,41 +184,41 @@
   {
     "course": "web-analytics",
     "note": "wa-w1-session-notes",
-    "q": "Higgsfield's banners claimed 55% and 62% off. What did Plus actually get?",
+    "q": "Countdown timers, \"personal\" offers and inflated discounts used to pressure users are called…",
     "options": [
-      "55% and 62%",
-      "40% and 46%",
-      "20% and 25%",
-      "No discount at all"
+      "Dark patterns",
+      "Micro-conversions",
+      "Dynamic pricing",
+      "Prescriptive analytics"
     ],
-    "answer": 1,
-    "explain": "Inflated percentages, countdown timers, “personal” framing and exit-intent offers were the tactics on show."
+    "answer": 0,
+    "explain": "The same personalisation that helps users can be turned against them."
   },
   {
     "course": "web-analytics",
     "note": "wa-w1-session-notes",
-    "q": "Roughly what share of Netflix viewing comes from recommendations (Gomez-Uribe & Hunt, 2015)?",
+    "q": "If every company can use the same AI, where does the competitive edge come from?",
     "options": [
-      "20%",
-      "50%",
-      "80%",
-      "95%"
+      "Your own data, and how much you learn from it",
+      "Using the newest AI model before competitors do",
+      "Spending more than competitors on the same tools",
+      "Keeping technology as a support function"
     ],
-    "answer": 2,
-    "explain": "About 80% — an example of technology as a strategic asset rather than a support function."
+    "answer": 0,
+    "explain": "Technology is a strategic asset; your data makes you hard to copy."
   },
   {
     "course": "web-analytics",
     "note": "wa-w1-session-notes",
-    "q": "Why was Amazon's CV-scoring AI scrapped in 2017?",
+    "q": "Which guardrail responds to the risk of bias in AI models?",
     "options": [
-      "It was too expensive",
-      "Amazon couldn't guarantee it wouldn't discriminate in other ways",
-      "Regulators banned it",
-      "It rated every CV 5 stars"
+      "Regular audits and diverse data",
+      "Privacy by design",
+      "A human in the loop",
+      "Asking for user consent"
     ],
-    "answer": 1,
-    "explain": "Trained on mostly male CVs, it marked down CVs containing “women's”."
+    "answer": 0,
+    "explain": "Bias → audits and diverse data; privacy → privacy by design; transparency (black box) → human in the loop."
   },
   {
     "course": "web-analytics",
@@ -249,15 +249,15 @@
   {
     "course": "web-analytics",
     "note": "wa-w1-session-notes",
-    "q": "In the AI agent trading desks, what is the sceptic agent for?",
+    "q": "Showing different images, headlines and offers to each visitor belongs to which family of AI use cases?",
     "options": [
-      "Executing trades faster",
-      "Explaining why the other agents might be wrong",
-      "Approving every trade instead of a human",
-      "Gathering market data"
+      "Personalisation",
+      "Productivity",
+      "Visibility",
+      "Creativity & UX"
     ],
-    "answer": 1,
-    "explain": "Without it, the agents just agree with each other."
+    "answer": 0,
+    "explain": "Productivity = automated A/B tests and flows; visibility = programmatic ads, AI SEO; creativity & UX = generative design."
   },
   {
     "course": "digital-marketing-tools",
@@ -1792,5 +1792,1071 @@
     ],
     "answer": 0,
     "explain": "Screaming Frog is the example; useful for audits of your own or competitors' sites."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "In web basics, what is the role of CSS?",
+    "options": [
+      "The style: colours, sizes, fonts and layout",
+      "The structure: headings, paragraphs and links",
+      "The behaviour: interaction in the browser",
+      "The storage: saving the site's data"
+    ],
+    "answer": 0,
+    "explain": "HTML = skeleton, CSS = style, JavaScript = the brain (behaviour)."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which language is \"the skeleton\" of a website?",
+    "options": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SQL"
+    ],
+    "answer": 0,
+    "explain": "HTML defines structure and content with tags."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What happens after the browser sends an HTTP(S) request?",
+    "options": [
+      "The server answers with files the browser then draws",
+      "The browser builds the page from its own cache only",
+      "The domain registrar sends the page to the user",
+      "The database draws the page on the screen"
+    ],
+    "answer": 0,
+    "explain": "URL → request over HTTP(S) → server returns HTML, CSS, JS, images, fonts → browser renders."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which body defines the technical standards websites are built on?",
+    "options": [
+      "W3C",
+      "ICANN",
+      "Red.es",
+      "Google"
+    ],
+    "answer": 0,
+    "explain": "ICANN and Red.es are about domain names, not web standards."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Besides HTML, CSS and JS, a modern site usually also has…",
+    "options": [
+      "A framework, a backend server and a database",
+      "A second domain, a CDN and a mobile app",
+      "A CMS, a builder and a template",
+      "A sitemap, robots.txt and a canonical tag"
+    ],
+    "answer": 0,
+    "explain": "e.g. React/Next.js, Node.js or Python on the server, PostgreSQL or MySQL."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which type of website is the most SEO-friendly according to the class table?",
+    "options": [
+      "Blog or magazine",
+      "Web app / PWA",
+      "Platform / SaaS",
+      "Portal or intranet"
+    ],
+    "answer": 0,
+    "explain": "Blogs aim at content and rankings (very high). Web apps, SaaS and intranets score low."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "A landing page's main goal is…",
+    "options": [
+      "Immediate conversion",
+      "Branding and corporate presence",
+      "Content and rankings",
+      "Private access to internal tools"
+    ],
+    "answer": 0,
+    "explain": "Corporate site = branding; blog = rankings; intranet = internal tools."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Compared with the traditional model, building a corporate site with a builder + AI mainly changes…",
+    "options": [
+      "Cost and time: from ≈ €12,000 and 4 months to a subscription plus a few hundred euros",
+      "Quality: AI-built sites always outrank traditionally built sites in search",
+      "Ownership: the AI provider keeps the rights to the website it generates",
+      "Nothing: each specialist role is still needed and paid as before"
+    ],
+    "answer": 0,
+    "explain": "Each role (copy, translation, design, development, QA) is replaced or helped by tools."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which role turns the visual design into HTML and CSS and makes it responsive?",
+    "options": [
+      "Web designer / layout developer",
+      "UI/UX designer, who owns usability and navigation",
+      "Backend developer, who owns the server logic",
+      "DevOps engineer, who owns cloud deployment"
+    ],
+    "answer": 0,
+    "explain": "UI/UX defines structure and usability; the layout developer builds it."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Who handles server logic, databases and APIs?",
+    "options": [
+      "The backend developer",
+      "The frontend developer",
+      "The UI/UX designer",
+      "The QA tester"
+    ],
+    "answer": 0,
+    "explain": "Processes the user never sees, like authentication or data processing."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which role tests for bugs and usability problems before launch?",
+    "options": [
+      "QA / tester",
+      "Business analyst",
+      "Database administrator",
+      "SEO consultant"
+    ],
+    "answer": 0,
+    "explain": "QA checks the product meets quality standards."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What is the main idea of the \"strategy\" section?",
+    "options": [
+      "There's no one-size-fits-all strategy, only one that fits the business model",
+      "Every business needs an online store to compete on the web",
+      "Strategy should be decided after the website has been built",
+      "The cheapest platform is always the right choice for a business"
+    ],
+    "answer": 0,
+    "explain": "Start from purpose, goals, audience and content."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which four questions define a web strategy in class?",
+    "options": [
+      "Purpose, website goals, target audience and content",
+      "Budget, platform, domain and hosting",
+      "Design, development, QA and deploy",
+      "Traffic, clicks, conversions and revenue"
+    ],
+    "answer": 0,
+    "explain": "Then, as a tip, ask an AI the same questions to find missed angles."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What does usability mean?",
+    "options": [
+      "How easy a product is to use",
+      "How fast a page loads",
+      "How many users visit a site",
+      "How well a site ranks"
+    ],
+    "answer": 0,
+    "explain": "Good structure reduces frustration and increases conversions."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "A wireframe is…",
+    "options": [
+      "A low-fidelity sketch of a page's basic structure before design",
+      "The XML file that tells search engines which pages a site has",
+      "The final, high-fidelity visual design with colours and fonts",
+      "The code that connects the website to its CMS and plugins"
+    ],
+    "answer": 0,
+    "explain": "The navigation tree/sitemap defines pages; wireframes sketch each page."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Why does the navigation tree matter beyond usability?",
+    "options": [
+      "It matters a lot for SEO",
+      "It sets the hosting price",
+      "It replaces the wireframes",
+      "It decides the domain name"
+    ],
+    "answer": 0,
+    "explain": "Which pages exist and how they connect affects how search engines read the site."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which is NOT one of the professional design rules from class?",
+    "options": [
+      "Use at least four typefaces for variety",
+      "Spacing in multiples of 8 px",
+      "Main CTA visible without scrolling",
+      "F- and Z-pattern reading"
+    ],
+    "answer": 0,
+    "explain": "The rule is two typefaces at most."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "\"UX isn't guessed, it's validated\" refers to which key of good design?",
+    "options": [
+      "User testing",
+      "Visual hierarchy",
+      "Consistency",
+      "Clarity first"
+    ],
+    "answer": 0,
+    "explain": "Measure, watch and adjust."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What is a CMS?",
+    "options": [
+      "A Content Management System like WordPress or Drupal",
+      "A code framework like React or Next.js for apps",
+      "A drag-and-drop visual builder like Wix or Framer",
+      "A hosting control panel like cPanel or Plesk"
+    ],
+    "answer": 0,
+    "explain": "CMS = templates + plugins; builders = drag and drop; code = by hand or frameworks."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What is the main trade-off of visual builders (Webflow, Wix)?",
+    "options": [
+      "Fast for marketing, but limited customisation",
+      "Fully custom, but slow to build",
+      "Free, but impossible to publish",
+      "Great for complex apps, but no design control"
+    ],
+    "answer": 0,
+    "explain": "Best for local businesses, simple corporate sites, portfolios and landing pages."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What does T2W mean in AI-first building?",
+    "options": [
+      "Text to website",
+      "Template to website",
+      "Theme to WordPress",
+      "Test to web"
+    ],
+    "answer": 0,
+    "explain": "Also F2W (Figma to website) and I2W (image to website)."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which method fits complex web apps, custom portals and dashboards?",
+    "options": [
+      "Code + AI",
+      "Visual builders + AI",
+      "AI-first only",
+      "CMS + AI"
+    ],
+    "answer": 0,
+    "explain": "AI-first fits micro-campaigns, A/B tests and MVPs; builders fit simple sites."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which method fits content sites with an editorial workflow and several languages?",
+    "options": [
+      "CMS + AI",
+      "Code + AI",
+      "AI-first",
+      "Visual builders + AI"
+    ],
+    "answer": 0,
+    "explain": "Blogs, news, catalogues and many-page marketing sites."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What is the class conclusion about AI in website creation?",
+    "options": [
+      "AI can do almost everything, but it's best guided by an experienced developer",
+      "AI builders will fully replace every other method of building websites",
+      "AI adds little value to building websites beyond writing the copy",
+      "AI should only be used for testing a site, not for building it"
+    ],
+    "answer": 0,
+    "explain": "2025: AI boosts every method. 2026: 99–100% can be AI, ideally guided by someone who understands the code."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What are the four steps of publishing a website, in order?",
+    "options": [
+      "Domain → hosting → deploy → measurement",
+      "Hosting → domain → measurement → deploy",
+      "Deploy → domain → hosting → measurement",
+      "Design → development → QA → launch"
+    ],
+    "answer": 0,
+    "explain": "Some AI builders (e.g. v0.app) do all four at once."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What does hosting do?",
+    "options": [
+      "Stores the site's files and makes them available online",
+      "Gives the website its address, like yourbrand.com",
+      "Puts each new version of the website live online",
+      "Tracks visits, clicks and conversions on the website"
+    ],
+    "answer": 0,
+    "explain": "Domain = address; deploy = publishing; measurement = analytics."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "When you register a domain, what do you actually buy?",
+    "options": [
+      "The right to use the name for a period, usually a year",
+      "Permanent ownership of the name, with no renewal",
+      "The hosting space where the website's files are kept",
+      "An SSL certificate that turns on HTTPS for the site"
+    ],
+    "answer": 0,
+    "explain": "Forget to renew and someone else can buy it."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which is a good domain practice from class?",
+    "options": [
+      "Short and easy to say, without hyphens or numbers",
+      "Long and keyword-stuffed for SEO",
+      "Hyphens between every word for clarity",
+      "Special characters like ñ for local markets"
+    ],
+    "answer": 0,
+    "explain": "Under 8 characters is ideal; avoid hyphens, numbers, doubled letters and special characters."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What is a deploy?",
+    "options": [
+      "Publishing the site (or each update) so it's available online",
+      "Buying the domain name from a registrar such as Namecheap",
+      "Sketching the first low-fidelity wireframes of each page",
+      "Setting up GA4, Search Console and Hotjar on the site"
+    ],
+    "answer": 0,
+    "explain": "Every update to content or code is a new deploy."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Which tool gives heatmaps and session recordings?",
+    "options": [
+      "Hotjar",
+      "Google Search Console",
+      "Google Analytics 4",
+      "Google Tag Manager"
+    ],
+    "answer": 0,
+    "explain": "GA4 = visits and behaviour; GSC = SEO and indexing."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "What is a \"routine\" in website maintenance with AI?",
+    "options": [
+      "A prompt with a schedule that an AI runs on its own",
+      "A weekly manual backup of the website's files",
+      "A WordPress plugin that updates other plugins",
+      "A checklist the QA team follows before launch"
+    ],
+    "answer": 0,
+    "explain": "It can research, write, check, publish or open a PR, and report."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w3-website-creation",
+    "q": "Why should a website now be designed for agents as well as people?",
+    "options": [
+      "AI agents browse, compare and even buy on users' behalf",
+      "Agents are the only visitors that count in GA4",
+      "Search engines no longer index pages",
+      "People no longer visit websites at all"
+    ],
+    "answer": 0,
+    "explain": "e.g. ChatGPT's browser and buying inside Google AI Mode."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What does website analytics do?",
+    "options": [
+      "Tracks and measures relevant data on users' behaviour on the website",
+      "Designs the website's interface and its navigation flow",
+      "Ranks the website higher in search engine results",
+      "Stores the website's files and makes them available"
+    ],
+    "answer": 0,
+    "explain": "It gives the information needed to decide where to invest."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "In Kaushik's definition, digital analytics aims to…",
+    "options": [
+      "Drive continuous improvement of the online experience to achieve results",
+      "Collect as much online data as possible, in as many tools as possible",
+      "Replace qualitative research with numbers that are easier to measure",
+      "Report traffic figures to management at the end of each month"
+    ],
+    "answer": 0,
+    "explain": "Qualitative and quantitative data, plus the competition, for online and offline results."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What are the two advantages of analysing?",
+    "options": [
+      "Making the best decision possible and measuring how the solution improves the issue",
+      "Guaranteeing good outcomes and removing the risk from every decision",
+      "Replacing the analyst's experience and removing all personal opinions",
+      "Collecting more data than competitors and building more reports"
+    ],
+    "answer": 0,
+    "explain": "\"Without data, you're just another person with an opinion.\""
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "A good decision followed by a bad outcome is called…",
+    "options": [
+      "Tough luck",
+      "Dumb luck",
+      "Failure",
+      "Success"
+    ],
+    "answer": 0,
+    "explain": "Decision quality and outcome quality are different things; bad decision + good outcome = dumb luck."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "According to class, the usual obstacle in analytics is…",
+    "options": [
+      "Processing raw data into meaningful insights",
+      "Not having enough data available to analyse",
+      "The high cost of the main analytics tools",
+      "Users refusing to accept tracking on websites"
+    ],
+    "answer": 0,
+    "explain": "Data → information → analytics → insights."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Why is the real impact of AI as a traffic source underestimated in GA4?",
+    "options": [
+      "AI Overviews arrive as organic and zero-click AI answers aren't seen",
+      "GA4 blocks every visit that comes from an AI assistant's links",
+      "AI visits are first counted twice and then removed from reports",
+      "GA4 has no channel at all for traffic from AI assistants"
+    ],
+    "answer": 0,
+    "explain": "GA4 does have an AI Assistant channel (ChatGPT, Gemini, Perplexity, Claude)."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Quantitative analytics measures… and qualitative analytics measures…",
+    "options": [
+      "What happened / why it happened",
+      "Why it happened / what happened",
+      "Traffic / revenue",
+      "Past results / future results"
+    ],
+    "answer": 0,
+    "explain": "Numbers vs reasons."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Which is a qualitative analytics method?",
+    "options": [
+      "Usability study",
+      "Session count",
+      "Click count",
+      "Purchase count"
+    ],
+    "answer": 0,
+    "explain": "Also questionnaires, focus groups, heatmaps, interviews."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What does the \"fable of the blind men\" teach about analytics?",
+    "options": [
+      "A number needs context and the big picture to mean anything",
+      "Qualitative data is always more reliable than numbers",
+      "More data always leads to better business decisions",
+      "Only one metric really matters for each website"
+    ],
+    "answer": 0,
+    "explain": "\"I sold 100 shoes\" — good or bad? You can't tell without context."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Which qualitative tool should you always start with?",
+    "options": [
+      "Content rating",
+      "Interviews",
+      "Group events",
+      "Offline survey"
+    ],
+    "answer": 0,
+    "explain": "Low time and cost, thousands of people, continuous."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What does an analytics maturity model describe?",
+    "options": [
+      "How advanced a company's analytics is, given its needs, data and processes",
+      "How old the company's analytics tools and installations are",
+      "How many analysts and data engineers a company employs",
+      "How long GA4 keeps a company's data before deleting it"
+    ],
+    "answer": 0,
+    "explain": "The plan depends on maturity and business model."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What must exist before implementing tools and reports?",
+    "options": [
+      "An action plan: what to measure, how and why",
+      "A finished dashboard in Looker Studio",
+      "A complete GA4 and GTM installation",
+      "A list of the tools competitors use"
+    ],
+    "answer": 0,
+    "explain": "The 8-step website analytics plan."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Which step comes first in the 8-step analytics plan?",
+    "options": [
+      "Business model know-how",
+      "Goals (SMART)",
+      "Tools (GA4, GTM)",
+      "Metrics and KPIs"
+    ],
+    "answer": 0,
+    "explain": "Business model know-how → know the business → goals → metrics and KPIs → tools → reporting → optimisation → learning."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Which steps of the plan need technical rather than business knowledge?",
+    "options": [
+      "Tools and reporting",
+      "Goals and KPIs",
+      "Optimisation and learning",
+      "Know the business and business model"
+    ],
+    "answer": 0,
+    "explain": "The rest rely on business knowledge."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Goals in an analytics plan should follow which rule?",
+    "options": [
+      "SMART",
+      "RACE",
+      "SWOT",
+      "PEST"
+    ],
+    "answer": 0,
+    "explain": "Then business goals are broken into website goals and measurable micro-goals."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What is a KPI?",
+    "options": [
+      "A metric that tells us whether the website's objectives are being met",
+      "Any number that GA4 can show in its standard reports",
+      "A business goal written out as a short sentence",
+      "A tool used to collect data from the website"
+    ],
+    "answer": 0,
+    "explain": "Each area needs its own KPIs according to its objectives."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What is a micro-conversion?",
+    "options": [
+      "An action that brings the user closer to the main conversion",
+      "A conversion worth less than a set amount, like €10",
+      "A conversion completed on a mobile device",
+      "A conversion that GA4 cannot measure directly"
+    ],
+    "answer": 0,
+    "explain": "e.g. registering in a checkout or requesting a quote; the conversion is the purchase."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Which is a conversion rather than a micro-conversion?",
+    "options": [
+      "A purchase",
+      "Adding a product to the cart",
+      "Requesting an online quote",
+      "Registering during checkout"
+    ],
+    "answer": 0,
+    "explain": "Conversions have a direct positive impact on company goals."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What makes a good report?",
+    "options": [
+      "Automated as far as possible and built for its audience",
+      "As many metrics as possible, for every team",
+      "Updated by hand each day, so it's always checked",
+      "The same layout and KPIs for every audience"
+    ],
+    "answer": 0,
+    "explain": "It shows the business evolution and drives decisions."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What is the most common mistake after reporting?",
+    "options": [
+      "Not taking action on the report's insights",
+      "Sharing the report with too many people",
+      "Including too few metrics in the report",
+      "Building the report as an automated dashboard"
+    ],
+    "answer": 0,
+    "explain": "Step 7 is optimisation: act on the decisions."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "How should AI be used on an analytics plan?",
+    "options": [
+      "To critique your plan, while you decide which changes to accept",
+      "To write the whole plan, since it knows more KPIs than you",
+      "To replace GA4 for measuring the plan's KPIs",
+      "Not at all, because AI answers contain mistakes"
+    ],
+    "answer": 0,
+    "explain": "Ask it to find unmeasurable KPIs, goals not linked to the business, and vanity metrics."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "How is GEO different from SEO?",
+    "options": [
+      "GEO asks whether AI assistants recommend you; SEO whether you show in Google's results",
+      "GEO is SEO for local businesses, focused on Google Maps listings",
+      "GEO measures paid ads that appear inside AI assistants' answers",
+      "They are the same discipline under a newer, AI-era name"
+    ],
+    "answer": 0,
+    "explain": "Measure with mentions, citations, AI Assistant traffic and share of voice."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "In AI visibility, \"share of voice\" means…",
+    "options": [
+      "The % of AI answers where you appear vs competitors",
+      "The number of links pointing to your site",
+      "Your share of total website traffic",
+      "How often your brand is searched on Google"
+    ],
+    "answer": 0,
+    "explain": "Mentions = brand appears; citations = they link to you."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What are the three main characteristics of GA4?",
+    "options": [
+      "Based on events, depends on cookies, cross-device and cross-platform",
+      "Based on sessions, cookie-free, desktop only",
+      "Paid licence, server-side, single device",
+      "Based on pageviews, fingerprinting, web only"
+    ],
+    "answer": 0,
+    "explain": "GA4 measures interactions as events."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Why use Google Tag Manager alongside GA4?",
+    "options": [
+      "Some relevant information can't be measured in GA4 directly",
+      "GA4 can't measure page views without GTM",
+      "GTM replaces the need to install GA4 at all",
+      "GTM is required to create a GA4 account"
+    ],
+    "answer": 0,
+    "explain": "Most KPIs can be measured in GA4, but not all."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "In GA4, what is an event?",
+    "options": [
+      "A unique action at a specific time, associated with a user",
+      "A visit that lasts longer than ten seconds",
+      "A report that GA4 runs on a set schedule",
+      "A group of users who share the same behaviour"
+    ],
+    "answer": 0,
+    "explain": "Page views, product clicks and add to carts are events."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "session_start and first_visit are which type of event?",
+    "options": [
+      "Automatically collected",
+      "Recommended events (predefined by Google)",
+      "Custom events (defined by you)",
+      "Key events (marked as conversions)"
+    ],
+    "answer": 0,
+    "explain": "Recommended events have a name and parameters predefined by Google; custom ones you define."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "What is the difference between an event and a parameter?",
+    "options": [
+      "The event counts how often something happens; the parameter adds detail about it",
+      "The event is used for websites, the parameter for apps only",
+      "The parameter counts actions; the event adds detail about them",
+      "They are two names for the same thing in different GA versions"
+    ],
+    "answer": 0,
+    "explain": "view_search_results counts searches; search_term says what was searched."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w4-website-analytics-1",
+    "q": "Before publishing a new GA4 event, you should…",
+    "options": [
+      "Prefer recommended events and check it in DebugView",
+      "Create a custom name for every event",
+      "Publish first and check the data next month",
+      "Ask AI to confirm it works"
+    ],
+    "answer": 0,
+    "explain": "Validate every event before it goes live."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "What is the first step of GA4 data acquisition?",
+    "options": [
+      "The user accepts cookies",
+      "GA4 builds a report",
+      "GTM fires a tag",
+      "The analyst writes a query"
+    ],
+    "answer": 0,
+    "explain": "Accept cookies → JavaScript layer collects data → data reaches GA4 → analyse and plot."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "Which statement about GA4 data is correct?",
+    "options": [
+      "It's an approximation, not an exact count",
+      "It counts every visitor exactly",
+      "It counts people, not browsers",
+      "It works without cookies or JavaScript"
+    ],
+    "answer": 0,
+    "explain": "Rejected cookies aren't counted, and by default it measures browsers."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "By default, what does GA4 measure?",
+    "options": [
+      "Browsers, not people",
+      "People, not browsers",
+      "Devices, not sessions",
+      "Accounts, not cookies"
+    ],
+    "answer": 0,
+    "explain": "Cookies identify unique browsers; GA4 can be configured to join a user's devices."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "What happens to traffic when a user rejects cookies?",
+    "options": [
+      "It isn't counted",
+      "It's counted twice",
+      "It's counted as organic",
+      "It's counted as direct"
+    ],
+    "answer": 0,
+    "explain": "One reason GA4 data is an approximation."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "3rd-party cookies are mainly used for…",
+    "options": [
+      "Analytics, retargeting and marketing",
+      "The website's own user experience",
+      "Storing the site's files",
+      "Securing the site with HTTPS"
+    ],
+    "answer": 0,
+    "explain": "1st-party cookies serve the user experience on the site."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "What is Google Tag Manager?",
+    "options": [
+      "A tag management tool to set up measurement without going through IT",
+      "A reporting tool that replaces GA4's standard reports",
+      "A hosting service that stores a website's files online",
+      "An AI assistant inside GA4 that answers questions"
+    ],
+    "answer": 0,
+    "explain": "It handles GA4 events, ad pixels and tools like Hotjar."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "Which of these is one of GTM's 6 fundamental elements?",
+    "options": [
+      "Triggers",
+      "Dashboards",
+      "Audiences",
+      "Cohorts"
+    ],
+    "answer": 0,
+    "explain": "Accounts, containers, tags, triggers, variables, data layers."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "Why does every GA4 metric need a comparison or date range?",
+    "options": [
+      "A metric needs context to be understood",
+      "GA4 can't show a metric on its own",
+      "Comparisons make the data exact",
+      "Filters remove the bots"
+    ],
+    "answer": 0,
+    "explain": "Compare periods or segments to know whether a number is good or bad."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "The Realtime report shows activity for the last…",
+    "options": [
+      "30 minutes",
+      "24 hours",
+      "7 days",
+      "5 minutes"
+    ],
+    "answer": 0,
+    "explain": "Realtime overview and Realtime pages."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "Which GA4 report group shows where users come from?",
+    "options": [
+      "Acquisition",
+      "Engagement",
+      "Monetisation",
+      "Retention"
+    ],
+    "answer": 0,
+    "explain": "User acquisition and traffic acquisition."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "Under last-click attribution, which touchpoint gets the credit?",
+    "options": [
+      "The last one before the conversion, with 100%",
+      "The first touchpoint of the journey, with 100%",
+      "Every touchpoint in the journey, in equal parts",
+      "The last Google paid ad in the journey, with 100%"
+    ],
+    "answer": 0,
+    "explain": "Last click on Google paid channels gives it to the last Google ad."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "What does the data-driven attribution model do?",
+    "options": [
+      "Splits credit across touchpoints by their measured contribution",
+      "Gives all the credit to the first touchpoint in the journey",
+      "Gives all the credit to the last Google paid ad clicked",
+      "Gives exactly the same credit to every touchpoint"
+    ],
+    "answer": 0,
+    "explain": "Unlike last click, every touchpoint can get a share."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "Which Explore technique shows user journeys as a tree chart?",
+    "options": [
+      "Path exploration",
+      "Segment overlay",
+      "Cohort exploration",
+      "User explorer"
+    ],
+    "answer": 0,
+    "explain": "Segment overlay uses Venn diagrams; cohort follows groups over time."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "Which Explore technique shows how user segments relate using Venn diagrams?",
+    "options": [
+      "Segment overlay",
+      "Path exploration",
+      "Funnel exploration",
+      "Blank"
+    ],
+    "answer": 0,
+    "explain": "Funnels show the journey to a conversion."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "In an Explore, what goes in rows/columns and what goes in values?",
+    "options": [
+      "Dimensions in rows/columns, metrics in values",
+      "Metrics in rows/columns, dimensions in values",
+      "Segments in values, filters in rows",
+      "Dates in rows, users in values"
+    ],
+    "answer": 0,
+    "explain": "Configuration area on the left, visualisation area on the right."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "What is Analytics Advisor in GA4?",
+    "options": [
+      "A Gemini-powered assistant that answers questions in natural language",
+      "A paid consulting service from Google's analytics team",
+      "A report that lists every event the property collects",
+      "A GTM tag that automatically fixes tracking errors"
+    ],
+    "answer": 0,
+    "explain": "It spots anomalies and summarises performance."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "What do GA4 custom alerts do?",
+    "options": [
+      "Email you when a condition you set is met",
+      "Fix the data when a metric drops",
+      "Block traffic that looks like bots",
+      "Send ads to users who left"
+    ],
+    "answer": 0,
+    "explain": "Pick metric → condition → frequency → recipients: from checking reports to letting the data warn us."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "How should you treat an AI answer in analytics?",
+    "options": [
+      "As a junior analyst's first draft to verify",
+      "As a final, verified result",
+      "As less reliable than a guess",
+      "As a replacement for standard reports"
+    ],
+    "answer": 0,
+    "explain": "Compare with the report, check dates and filters, ask how it was calculated."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w5-ai-powered-analytics",
+    "q": "Why be careful when AI explains why a metric changed?",
+    "options": [
+      "AI finds correlations; it doesn't always explain causes",
+      "AI can't read GA4 data, so it guesses the answer",
+      "AI always picks the wrong date range by default",
+      "AI ignores the filters applied to a report on purpose"
+    ],
+    "answer": 0,
+    "explain": "Validate the answer in Reports or Explore."
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "Which future trend means asking your data questions in plain language?",
+    "options": [
+      "Conversational analytics",
+      "Privacy-first analytics",
+      "Connected martech",
+      "Prescriptive analytics"
+    ],
+    "answer": 0,
+    "explain": "e.g. \"Why did conversions drop last Tuesday?\""
+  },
+  {
+    "course": "web-analytics",
+    "note": "wa-w1-session-notes",
+    "q": "What is the difference between predictive and prescriptive analytics?",
+    "options": [
+      "Predictive says what will happen; prescriptive recommends what to do",
+      "Predictive recommends what to do; prescriptive says what will happen",
+      "Predictive describes the past; prescriptive describes the present",
+      "They are two names for the same level of analytics"
+    ],
+    "answer": 0,
+    "explain": "Descriptive = what happened; predictive = what will happen; prescriptive = what should we do."
   }
 ]

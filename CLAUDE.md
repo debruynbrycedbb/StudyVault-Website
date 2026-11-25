@@ -25,7 +25,7 @@ Course ids: `web-analytics`, `digital-marketing-advertising`, `digital-marketing
    - add a `notes` entry `{ id, course, week, title, date, path, source: <file id>, tags: [...] }`;
    - in the course's `weeks`, add or update `{ n, title, date, notes: [...], files: [...] }`.
    - Courses not organised by week (the Master's Thesis) use labelled sections: add `label` (e.g. `"RD1"`, `"Research"`, `"Resources"`) and the site shows the label instead of "Week N", in order. Add new deliverables as new sections (e.g. `{ n: 4, label: "RD2", ... }`).
-5. Optionally add 5–10 questions to `content/quiz.json` (`course`, `note`, `q`, `options`, `answer` index, `explain`) and case studies / tools / resources to `library` that come from the note.
+5. Optionally add 5–10 questions to `content/quiz.json` (`course`, `note`, `q`, `options`, `answer` index, `explain`) and case studies / tools / resources to `library` that come from the note. Follow the quiz rule in `## Learned`.
 6. Bump `SV.VERSION` in `js/app.js` so browsers fetch fresh content, validate JSON (`python3 -c "import json;json.load(open('content/vault.json'))"`), commit and push to `main`.
 
 ## Deadlines
@@ -39,3 +39,6 @@ Anything Bryce adds through the site itself (notes, PDFs, deadlines, links, libr
 ## Design
 
 Matches Bryce's project hub: navy `#070B14`, hub blue `#5B8CFF`, Archivo at 112–125% width for display and labels, Manrope for body text. Fonts and libraries (marked, DOMPurify, pdf.js) are self-hosted in `assets/fonts` and `js/vendor` — don't switch to CDNs.
+
+## Learned
+- Quiz questions test course theory (definitions, differences, reasons), not class examples. Wrong options are believable concept mix-ups of similar length to the right answer.

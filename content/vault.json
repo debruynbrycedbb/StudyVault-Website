@@ -40,6 +40,39 @@
           "files": [
             "wa-w2-prereading-docx"
           ]
+        },
+        {
+          "n": 3,
+          "title": "Website creation: traditional vs AI",
+          "date": "",
+          "notes": [
+            "wa-w3-website-creation"
+          ],
+          "files": [
+            "wa-w3-creation-pdf"
+          ]
+        },
+        {
+          "n": 4,
+          "title": "Strategic website analytics",
+          "date": "",
+          "notes": [
+            "wa-w4-website-analytics-1"
+          ],
+          "files": [
+            "wa-w4-analytics1-pptx"
+          ]
+        },
+        {
+          "n": 5,
+          "title": "AI-powered website analytics",
+          "date": "",
+          "notes": [
+            "wa-w5-ai-powered-analytics"
+          ],
+          "files": [
+            "wa-w5-ai-analytics-pdf"
+          ]
         }
       ],
       "extras": [
@@ -580,6 +613,68 @@
         "Yoast",
         "Screaming Frog"
       ]
+    },
+    {
+      "id": "wa-w3-website-creation",
+      "course": "web-analytics",
+      "week": 3,
+      "title": "Website Creation: traditional vs AI",
+      "date": "",
+      "path": "content/notes/wa-w3-website-creation.md",
+      "source": "wa-w3-creation-pdf",
+      "tags": [
+        "web basics",
+        "types of website",
+        "investment",
+        "tech team",
+        "web strategy",
+        "usability",
+        "CMS",
+        "AI-first",
+        "domain",
+        "hosting",
+        "deploy"
+      ]
+    },
+    {
+      "id": "wa-w4-website-analytics-1",
+      "course": "web-analytics",
+      "week": 4,
+      "title": "Strategic Website Analytics: plan, KPIs and GA4 basics",
+      "date": "",
+      "path": "content/notes/wa-w4-website-analytics-1.md",
+      "source": "wa-w4-analytics1-pptx",
+      "tags": [
+        "website analytics",
+        "quantitative vs qualitative",
+        "analytics plan",
+        "SMART goals",
+        "KPIs",
+        "conversions",
+        "GA4",
+        "events",
+        "parameters",
+        "GEO"
+      ]
+    },
+    {
+      "id": "wa-w5-ai-powered-analytics",
+      "course": "web-analytics",
+      "week": 5,
+      "title": "AI-powered Website Analytics: GA4 in practice",
+      "date": "",
+      "path": "content/notes/wa-w5-ai-powered-analytics.md",
+      "source": "wa-w5-ai-analytics-pdf",
+      "tags": [
+        "GA4",
+        "cookies",
+        "Google Tag Manager",
+        "reports",
+        "attribution models",
+        "Explore",
+        "Analytics Advisor",
+        "alerts"
+      ]
     }
   ],
   "files": [
@@ -771,6 +866,33 @@
       "title": "SEO III slides: link building, Google Images, tools (PDF)",
       "path": "files/digital-marketing-advertising/week-05-seo-3-slides.pdf",
       "size": 3375868
+    },
+    {
+      "id": "wa-w3-creation-pdf",
+      "course": "web-analytics",
+      "week": 3,
+      "kind": "Slides",
+      "title": "Website Creation: Traditional vs AI, theoretical part (PDF)",
+      "path": "files/web-analytics/week-03-website-creation-slides.pdf",
+      "size": 2971123
+    },
+    {
+      "id": "wa-w4-analytics1-pptx",
+      "course": "web-analytics",
+      "week": 4,
+      "kind": "Slides",
+      "title": "Website Analytics I: Strategic Website Analytics (PowerPoint)",
+      "path": "files/web-analytics/week-04-website-analytics-1-slides.pptx",
+      "size": 26460350
+    },
+    {
+      "id": "wa-w5-ai-analytics-pdf",
+      "course": "web-analytics",
+      "week": 5,
+      "kind": "Slides",
+      "title": "AI-powered Website Analytics (PDF)",
+      "path": "files/web-analytics/week-05-ai-powered-analytics-slides.pdf",
+      "size": 8133008
     }
   ],
   "deadlines": [
@@ -1173,6 +1295,20 @@
         ],
         "summary": "July 2020 trend for \"ugly sneakers\" in some Nordic countries, driven by scarcity and Veblen-good behaviour (demand rises with price). The media buzz generated many backlinks.",
         "lesson": "Astonishing or fake products and facts can create media buzz and backlinks."
+      },
+      {
+        "id": "c-euromon-site",
+        "title": "Euromon PLV: a low-cost website with a strong ROI",
+        "course": "web-analytics",
+        "note": "wa-w3-website-creation",
+        "tags": [
+          "investment",
+          "ROI",
+          "Wix",
+          "SEO"
+        ],
+        "summary": "A Wix site (€189.12 for 2 years) with three domains, 160 initial hours plus 3 hours a week of staff time: about €158.49 a year plus staff cost. With a minimum viable SEO strategy, the first year returned about €69 for every €1 invested.",
+        "lesson": "A builder plus AI and basic SEO can beat a traditional ~€12,000 build on return, if the strategy fits the business."
       }
     ],
     "tools": [
@@ -1350,6 +1486,38 @@
         "course": "digital-marketing-advertising",
         "url": "https://search.google.com/test/rich-results",
         "summary": "Google's test for schema markup / rich snippets (JSON-LD recommended) (SEO II)."
+      },
+      {
+        "id": "t-ga4",
+        "title": "Google Analytics 4 (GA4)",
+        "category": "Web analytics",
+        "course": "web-analytics",
+        "url": "https://analytics.google.com",
+        "summary": "Free event-based analytics for websites and apps: cookies, cross-device, customisable reports, Explore, attribution models, Analytics Advisor (Gemini), insights and alerts (WA weeks 4–5)."
+      },
+      {
+        "id": "t-gtm",
+        "title": "Google Tag Manager",
+        "category": "Tag management",
+        "course": "web-analytics",
+        "url": "https://tagmanager.google.com",
+        "summary": "Configures measurement without going through IT: GA4 events, ad and social pixels, tools like Hotjar. Built from accounts, containers, tags, triggers, variables and data layers (WA week 5)."
+      },
+      {
+        "id": "t-hotjar",
+        "title": "Hotjar",
+        "category": "Behaviour analytics",
+        "course": "web-analytics",
+        "url": "https://www.hotjar.com",
+        "summary": "Heatmaps and session recordings: the qualitative \"why\" behind GA4's numbers (WA weeks 3–4)."
+      },
+      {
+        "id": "t-ga-demo",
+        "title": "Google Merch Shop GA4 demo account",
+        "category": "Practice data",
+        "course": "web-analytics",
+        "url": "https://support.google.com/analytics/answer/6367342",
+        "summary": "The GA4 demo account of the official Google Merch Shop, used in class to practise reports and Explore (WA weeks 4–5)."
       }
     ],
     "resources": [
