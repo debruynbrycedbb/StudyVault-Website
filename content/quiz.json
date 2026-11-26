@@ -236,15 +236,15 @@
   {
     "course": "web-analytics",
     "note": "wa-w1-session-notes",
-    "q": "How is Web Analytics assessed?",
+    "q": "Personalisation needs data, and GDPR demands consent. Which guardrail responds to this privacy risk?",
     "options": [
-      "Exam 100%",
-      "Final quiz 30%, coursework 70%",
-      "Coursework 50%, participation 50%",
-      "Final quiz 70%, coursework 30%"
+      "Privacy by design",
+      "A human in the loop",
+      "Regular audits and diverse data",
+      "Conversational analytics"
     ],
-    "answer": 1,
-    "explain": "Coursework is graded by TFM tutors, partly on fit with your TFM case and strategy."
+    "answer": 0,
+    "explain": "The three guardrails: bias → regular audits and diverse data; privacy → privacy by design; transparency (black box) → a human in the loop."
   },
   {
     "course": "web-analytics",
@@ -638,16 +638,16 @@
   },
   {
     "course": "masters-thesis",
-    "note": "tfm-rd1-brief",
-    "q": "In Deliverable 1, each buyer persona must be classified as…",
+    "note": "tfm-research-barcelona",
+    "q": "The research says a ≈€176 upcycled jacket can't compete on price with a vintage rail. What should the boutique sell instead?",
     "options": [
-      "Primary, secondary or tertiary",
-      "Brand lover, loyal or occasional",
-      "B2B, B2C or B2G",
-      "Innovator, early adopter or laggard"
+      "The design, the making and the experience",
+      "Lower prices through seasonal discounts",
+      "A wider range of second-hand vintage pieces",
+      "Fast delivery to tourists' hotels"
     ],
-    "answer": 1,
-    "explain": "The brief asks to distinguish whether a persona is a brand lover, loyal or occasional customer."
+    "answer": 0,
+    "explain": "Positioning as an upcycling atelier and experience avoids the cheapest, most crowded \"vintage/thrift\" category."
   },
   {
     "course": "masters-thesis",

@@ -42,3 +42,4 @@ Matches Bryce's project hub: navy `#070B14`, hub blue `#5B8CFF`, Archivo at 112â
 
 ## Learned
 - Quiz questions test course theory (definitions, differences, reasons), not class examples. Wrong options are believable concept mix-ups of similar length to the right answer.
+- No quiz questions about course logistics: grading, deadlines, lecturers or assignment-brief rules.
